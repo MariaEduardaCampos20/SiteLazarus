@@ -1,0 +1,786 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:#222;
+    background:#fff;
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    z-index:999;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
+
+}
+
+header .container{
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.logo img{
+
+    height:65px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:#222;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#9d7b43;
+
+}
+
+.btn-header{
+
+    background:#9d7b43;
+
+    color:#fff;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.btn-header:hover{
+
+    background:#846533;
+
+}
+
+.menu-mobile{
+
+    display:none;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    position:relative;
+
+    height:100vh;
+
+    background:url("../img/hero.jpg") center center/cover;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    color:#fff;
+
+    max-width:700px;
+
+}
+
+.tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:rgba(255,255,255,.15);
+
+    border-radius:30px;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-primary{
+
+    background:#9d7b43;
+
+    color:#fff;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+.btn-secondary{
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:#fff;
+
+    color:#222;
+
+}
+
+/* ===========================
+   TÍTULOS
+=========================== */
+
+.titulo{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.titulo span{
+
+    color:#9d7b43;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+}
+
+.titulo h2{
+
+    margin-top:10px;
+
+    font-size:42px;
+
+}
+
+/* ===========================
+   SOBRE
+=========================== */
+
+.sobre{
+
+    padding:120px 0;
+
+}
+
+.sobre .container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.sobre img{
+
+    border-radius:20px;
+
+}
+
+.sobre span{
+
+    color:#9d7b43;
+
+    font-weight:600;
+
+}
+
+.sobre h2{
+
+    font-size:42px;
+
+    margin:20px 0;
+
+}
+
+.sobre p{
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+   NÚMEROS
+=========================== */
+
+.numeros{
+
+    background:#f7f7f7;
+
+    padding:90px 0;
+
+}
+
+.numeros .container{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.numero{
+
+    background:#fff;
+
+    text-align:center;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.numero h3{
+
+    font-size:46px;
+
+    color:#9d7b43;
+
+}
+
+.numero p{
+
+    margin-top:10px;
+
+}
+
+/* ===========================
+   SERVIÇOS
+=========================== */
+
+.servicos{
+
+    padding:120px 0;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card img{
+
+    width:70px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+}
+
+.card h3{
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================
+   PROJETOS
+=========================== */
+
+.projetos{
+
+    padding:120px 0;
+
+    background:#fafafa;
+
+}
+
+.grid-projetos{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.projeto{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+}
+
+.projeto img{
+
+    width:100%;
+
+    transition:.5s;
+
+}
+
+.projeto:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   CTA
+=========================== */
+
+.cta{
+
+    background:#9d7b43;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:100px 0;
+
+}
+
+.cta h2{
+
+    font-size:42px;
+
+    margin-bottom:35px;
+
+}
+
+.cta .btn-primary{
+
+    background:#fff;
+
+    color:#9d7b43;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#1d1d1d;
+
+    color:#fff;
+
+    padding-top:70px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:50px;
+
+    padding-bottom:60px;
+
+}
+
+footer h3{
+
+    margin-bottom:20px;
+
+}
+
+footer li{
+
+    margin-bottom:12px;
+
+}
+
+footer a{
+
+    color:#ddd;
+
+}
+
+footer p{
+
+    color:#ccc;
+
+    margin-bottom:12px;
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+    padding:25px;
+
+    color:#aaa;
+
+}
+/* ===========================
+ANIMAÇÕES
+=========================== */
+
+.sobre,
+.servicos,
+.numeros,
+.projetos,
+.cta,
+footer{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:.8s;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+/* ===========================
+   CARD DOS PROJETOS
+=========================== */
+
+.projeto{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.projeto:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.info-projeto{
+
+    padding:25px;
+
+}
+
+.info-projeto h3{
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.info-projeto p{
+
+    margin-bottom:20px;
+
+    color:#666;
+
+}
+
+.info-projeto a{
+
+    color:#9d7b43;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+CONTATO
+=========================== */
+
+.contato{
+
+    padding:120px 0;
+
+}
+
+.contato-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:flex-start;
+
+}
+
+.informacoes h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.informacoes>p{
+
+    margin-bottom:40px;
+
+    color:#666;
+
+}
+
+.info-card{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.formulario{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.formulario form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.formulario input,
+.formulario textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-family:Poppins,sans-serif;
+
+    font-size:16px;
+
+}
+
+.formulario textarea{
+
+    resize:none;
+
+}
+
+.formulario button{
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+MAPA
+=========================== */
+
+.mapa iframe{
+
+    width:100%;
+
+    height:450px;
+
+    border:0;
+
+}
