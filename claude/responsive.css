@@ -1,0 +1,180 @@
+/* ==========================================================================
+   RESPONSIVE.CSS - Reorganização coerente para tablet e mobile
+   ========================================================================== */
+
+/* ---------- TABLET (até 1024px) ---------- */
+@media (max-width: 1024px) {
+  .icon-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projetos-grid,
+  .servicos-grid,
+  .noticias-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diferenciais-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .duas-colunas,
+  .editais-noticias,
+  .outros-projetos,
+  .linha-dupla {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-imagem {
+    order: -1;
+  }
+}
+
+/* ---------- MOBILE (até 768px) ---------- */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  /* Menu hambúrguer */
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    background: var(--azul-escuro-2);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    gap: 0;
+  }
+
+  .navbar.aberto {
+    max-height: 600px;
+    padding-bottom: 24px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .navbar a {
+    display: block;
+    padding: 12px 0;
+  }
+
+  .header .btn-apoiar {
+    margin-top: 16px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-botoes {
+    flex-direction: column;
+  }
+  .hero-botoes .btn {
+    width: 100%;
+  }
+
+  .stats-bar {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .stat-item {
+    width: 100%;
+    border-bottom: 1px solid var(--cinza-borda);
+    padding: 14px 0;
+  }
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+
+  .icon-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projetos-grid,
+  .servicos-grid,
+  .noticias-grid,
+  .diferenciais-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta,
+  .faixa-contato {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-botoes,
+  .faixa-botoes {
+    width: 100%;
+    flex-direction: column;
+  }
+  .cta-botoes .btn,
+  .faixa-botoes .btn {
+    width: 100%;
+  }
+
+  .etapas {
+    flex-direction: column;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 16px;
+  }
+
+  .logos-carrossel {
+    gap: 26px;
+  }
+
+  .logos-carrossel img {
+    height: 30px;
+  }
+
+  .como-trabalhamos-topo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ---------- MOBILE PEQUENO (até 480px) ---------- */
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .logo span.texto {
+    font-size: 0.95rem;
+  }
+}
