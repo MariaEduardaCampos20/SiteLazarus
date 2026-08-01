@@ -2,48 +2,343 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Serviços - Lazarus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços - Lazarus Assessoria & Projetos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- HEADER FIEL AO LAYOUT DA IMAGEM -->
   <header class="header">
-    <div class="container">
-      <a href="index.html" class="logo">▲ LAZARUS</a>
-      <ul class="nav-links">
-        <li><a href="index.html">INÍCIO</a></li>
-        <li><a href="sobre.html">A LAZARUS</a></li>
-        <li><a href="servicos.html" class="active">SERVIÇOS</a></li>
-        <li><a href="projetos.html">PROJETOS</a></li>
-        <li><a href="captacao.html">CAPTAÇÃO</a></li>
-        <li><a href="#">CONTATO</a></li>
-      </ul>
-      <a href="#" class="btn-header">QUERO APOIAR</a>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-symbol">▲</div>
+        <div class="logo-text">
+          <span class="brand-name">LAZARUS</span>
+          <span class="brand-sub">ASSESSORIA & PROJETOS</span>
+        </div>
+      </a>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">INÍCIO</a></li>
+          <li><a href="sobre.html">A LAZARUS</a></li>
+          <li><a href="servicos.html" class="active">SERVIÇOS</a></li>
+          <li><a href="projetos.html">PROJETOS</a></li>
+          <li><a href="captacao.html">CAPTAÇÃO</a></li>
+          <li><a href="editais.html">EDITAIS</a></li>
+          <li class="dropdown"><a href="#">CONTEÚDO <i class="fa-solid fa-chevron-down"></i></a></li>
+          <li><a href="estrela-do-oriente.html">ASSOCIAÇÃO ESTRELA DO ORIENTE</a></li>
+          <li><a href="circo-pititico.html">CIRCO PITITICO</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-header">
+        <i class="fa-regular fa-heart"></i> QUERO APOIAR
+        <small style="display:block; font-size:7px; font-weight:normal; margin-top:-2px;">DOE OU PATROCINE</small>
+      </a>
     </div>
   </header>
 
-  <section class="hero-dark">
-    <div class="container">
-      <span class="tag">SERVIÇOS</span>
-      <h1>Soluções completas para transformar sua <span style="color:var(--green-light)">ideia em realidade.</span></h1>
-    </div>
-  </section>
+  <!-- HERO SECTION - SERVIÇOS -->
+  <section class="servicos-hero">
+    <div class="container servicos-hero-grid">
+      <div class="servicos-hero-text">
+        <span class="hero-tag">SERVIÇOS</span>
+        <h1>Soluções completas<br>para transformar<br>sua <span class="highlight">ideia em realidade.</span></h1>
+        <p>
+          A Lazarus Assessoria & Projetos oferece serviços especializados em todas as etapas do ciclo de vida de um projeto, garantindo excelência técnica, gestão eficiente e resultados que geram impacto positivo na sociedade.
+        </p>
+      </div>
 
-  <!-- GRADE DE SERVIÇOS -->
-  <section style="padding: 60px 0;">
-    <div class="container">
-      <div class="grid-3">
-        <div class="card"><h3>Elaboração de Projetos</h3><p>Transformamos ideias em projetos estruturados alinhados aos editais.</p></div>
-        <div class="card"><h3>Captação de Recursos</h3><p>Buscamos recursos em leis de incentivo, editais e iniciativa privada.</p></div>
-        <div class="card"><h3>Gestão de Projetos</h3><p>Acompanhamos todas as etapas da execução do projeto.</p></div>
-        <div class="card"><h3>Prestação de Contas</h3><p>Elaboração de relatórios e reunião de documentos comprobatórios.</p></div>
-        <div class="card"><h3>Consultoria</h3><p>Orientação especializada para organizações e produtores.</p></div>
-        <div class="card"><h3>Treinamentos</h3><p>Cursos e oficinas sobre leis de incentivo e captação.</p></div>
+      <div class="servicos-hero-image">
+        <img src="https://picsum.photos/700/400?random=88" alt="Soluções completas Lazarus">
       </div>
     </div>
   </section>
 
+  <!-- NOSSOS SERVIÇOS (12 CARDS) -->
+  <section class="section-nossos-servicos">
+    <div class="container">
+      <div class="section-header-center">
+        <h2>NOSSOS SERVIÇOS</h2>
+        <p>Atuamos do planejamento à prestação de contas, com soluções personalizadas para cada cliente.</p>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="servicos-grid">
+        <!-- 1 -->
+        <div class="servico-card">
+          <div class="servico-icon-wrapper"><i class="fa-solid fa-file-lines"></i></div>
+          <h3>Elaboração de Projetos</h3>
+          <p>Transformamos ideias em projetos estruturados, alinhados aos objetivos e às exigências dos editais e leis de incentivo.</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="servico-card">
+          <div class="servico-icon-wrapper"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Captação de Recursos</h3>
+          <p>Buscamos recursos em leis de incentivo, editais públicos e na iniciativa privada para viabilizar e potencializar seu projeto.</p>
+        </div>
+
+        <!-- 3 -->
+        <div class="servico-card">
+          <div class="servico-icon-wrapper"><i class="fa-solid fa-gear"></i></div>
+          <h3>Gestão de Projetos</h3>
+          <p>Acompanhamos todas as etapas da execução do projeto com planejamento, organização e controle de prazos e metas.</p>
+        </div>
+
+        <!-- 4 -->
+        <div class="servico-card">
+          <div class="servico-icon-wrapper"><i class="fa-solid fa-clipboard-check"></i></div>
+          <h3>Prestação de Contas</h3>
+          <p>Elaboramos relatórios, reunimos documentos e garantimos total conformidade com os órgãos responsáveis.</p>
+        </div>
+
+        <!-- 5 -->
+        <div class="servico-card">
+          <div class="servico-icon-wrapper"><i class="fa-solid fa-comments"></i></div>
+          <h3>Consultoria</h3>
+          <p>Orientação especializada para organizações, artistas, produtores, empresas e instituições do terceiro setor.</p>
+        </div>
+
+        <!-- 6 -->
+        <div class="servico-card">
+          <div class="servico-icon-wrapper"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Treinamentos</h3>
+          <p>Cursos e oficinas sobre leis de incentivo, elaboração de projetos, captação e gestão cultural.</p>
+        </div>
+
+        <!-- 7 -->
+        <div class="servico-card">
+          <div class="servico-icon-wrapper"><i class="fa-solid fa-bullhorn"></i></div>
+          <h3>Planejamento Estratégico</h3>
+          <p>Construímos planos estratégicos para fortalecer instituições e guiar decisões com foco em resultados e sustentabilidade.</p>
+        </div>
+
+        <!-- 8 -->
+        <div class="servico-card">
+          <div class="servico-icon-wrapper"><i class="fa-solid fa-handshake"></i></div>
+          <h3>Parcerias e Patrocínios</h3>
+          <p>Desenvolvemos estratégias para aproximar projetos de empresas e construir parcerias de valor para todos.</p>
+        </div>
+
+        <!-- 9 -->
+        <div class="servico-card">
+          <div class="servico-icon-wrapper"><i class="fa-solid fa-calculator"></i></div>
+          <h3>Gestão Financeira</h3>
+          <p>Planejamento orçamentário, controle financeiro e apoio na execução de recursos com transparência e eficiência.</p>
+        </div>
+
+        <!-- 10 -->
+        <div class="servico-card">
+          <div class="servico-icon-wrapper"><i class="fa-solid fa-chart-column"></i></div>
+          <h3>Monitoramento e Avaliação</h3>
+          <p>Acompanhamento de indicadores e avaliação de resultados para medir o impacto e orientar melhorias.</p>
+        </div>
+
+        <!-- 11 -->
+        <div class="servico-card">
+          <div class="servico-icon-wrapper"><i class="fa-solid fa-file-signature"></i></div>
+          <h3>Adequação a Leis e Editais</h3>
+          <p>Análise de editais e leis de incentivo para garantir que seu projeto esteja apto e competitivo.</p>
+        </div>
+
+        <!-- 12 -->
+        <div class="servico-card">
+          <div class="servico-icon-wrapper"><i class="fa-solid fa-puzzle-piece"></i></div>
+          <h3>Soluções Integradas</h3>
+          <p>Serviços completos e integrados para que você tenha tranquilidade do início ao fim do seu projeto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO TRABALHAMOS (PASSO A PASSO FLUXO) -->
+  <section class="section-como-trabalhamos">
+    <div class="container">
+      <div class="como-trabalhamos-header">
+        <div class="como-title-group">
+          <h2>COMO <span>TRABALHAMOS</span></h2>
+          <p>Metodologia própria que garante organização, transparência e resultados em cada etapa.</p>
+        </div>
+        
+        <div class="flow-steps-grid">
+          <!-- Passo 1 -->
+          <div class="flow-step">
+            <div class="icon-bubble">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span class="step-badge">1</span>
+            </div>
+            <h4>Diagnóstico</h4>
+            <p>Entendemos sua necessidade e o contexto do projeto.</p>
+          </div>
+
+          <div class="flow-connector"></div>
+
+          <!-- Passo 2 -->
+          <div class="flow-step">
+            <div class="icon-bubble">
+              <i class="fa-solid fa-clipboard-list"></i>
+              <span class="step-badge">2</span>
+            </div>
+            <h4>Planejamento</h4>
+            <p>Definimos objetivos, metas e estratégias de atuação.</p>
+          </div>
+
+          <div class="flow-connector"></div>
+
+          <!-- Passo 3 -->
+          <div class="flow-step">
+            <div class="icon-bubble">
+              <i class="fa-solid fa-file-pen"></i>
+              <span class="step-badge">3</span>
+            </div>
+            <h4>Elaboração</h4>
+            <p>Desenvolvemos o projeto completo e toda a documentação.</p>
+          </div>
+
+          <div class="flow-connector"></div>
+
+          <!-- Passo 4 -->
+          <div class="flow-step">
+            <div class="icon-bubble">
+              <i class="fa-solid fa-sack-dollar"></i>
+              <span class="step-badge">4</span>
+            </div>
+            <h4>Captação</h4>
+            <p>Buscamos recursos em leis de incentivo, editais e com patrocinadores.</p>
+          </div>
+
+          <div class="flow-connector"></div>
+
+          <!-- Passo 5 -->
+          <div class="flow-step">
+            <div class="icon-bubble">
+              <i class="fa-solid fa-gears"></i>
+              <span class="step-badge">5</span>
+            </div>
+            <h4>Execução e Gestão</h4>
+            <p>Acompanhamos a execução com organização e controle de todas as etapas.</p>
+          </div>
+
+          <div class="flow-connector"></div>
+
+          <!-- Passo 6 -->
+          <div class="flow-step">
+            <div class="icon-bubble">
+              <i class="fa-solid fa-book-open"></i>
+              <span class="step-badge">6</span>
+            </div>
+            <h4>Prestação de Contas</h4>
+            <p>Elaboramos relatórios e garantimos a correta prestação de contas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA DE CONTATO RÁPIDO -->
+  <section class="cta-dark-banner">
+    <div class="container cta-dark-flex">
+      <div class="cta-dark-left">
+        <i class="fa-regular fa-user cta-user-icon"></i>
+        <div>
+          <h3>Pronto para tirar seu projeto do papel?</h3>
+          <p>Fale com a Lazarus e descubra como podemos ajudar.</p>
+        </div>
+      </div>
+
+      <div class="cta-dark-buttons">
+        <a href="https://wa.me/5534999099999" target="_blank" class="btn btn-cta-green">
+          <i class="fa-brands fa-whatsapp"></i> FALAR COM A LAZARUS
+        </a>
+        <a href="contato.html" class="btn btn-cta-outline">
+          <i class="fa-solid fa-file-lines"></i> SOLICITAR ORÇAMENTO
+        </a>
+        <a href="projetos.html" class="btn btn-cta-outline">
+          <i class="fa-regular fa-eye"></i> CONHECER PROJETOS
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container"><p>© 2024 Lazarus Assessoria & Projetos.</p></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo logo-white">
+          <div class="logo-symbol">▲</div>
+          <div class="logo-text">
+            <span class="brand-name">LAZARUS</span>
+            <span class="brand-sub">ASSESSORIA & PROJETOS</span>
+          </div>
+        </div>
+        <p>Conectamos ideias, pessoas e oportunidades para transformar projetos em impacto social, cultural, educacional e institucional.</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>NAVEGAÇÃO</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">A Lazarus</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="captacao.html">Captação</a></li>
+          <li><a href="editais.html">Editais</a></li>
+          <li><a href="#">Conteúdo</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>SERVIÇOS</h4>
+        <ul>
+          <li><a href="#">Elaboração de Projetos</a></li>
+          <li><a href="#">Captação de Recursos</a></li>
+          <li><a href="#">Gestão de Projetos</a></li>
+          <li><a href="#">Prestação de Contas</a></li>
+          <li><a href="#">Consultoria</a></li>
+          <li><a href="#">Treinamentos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>INFORMAÇÕES</h4>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-phone"></i> (34) 9 9909-9999</li>
+          <li><i class="fa-solid fa-envelope"></i> contato@lazarusprojetos.com.br</li>
+          <li><i class="fa-solid fa-location-dot"></i> Uberlândia – MG</li>
+        </ul>
+        <a href="https://wa.me/5534999099999" class="btn-whatsapp-footer">
+          <i class="fa-brands fa-whatsapp"></i> Fale conosco pelo WhatsApp
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h4>INSTITUCIONAL</h4>
+        <ul>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">LGPD</a></li>
+          <li><a href="#">Transparência</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Lazarus Assessoria & Projetos. Todos os direitos reservados.</p>
+    </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

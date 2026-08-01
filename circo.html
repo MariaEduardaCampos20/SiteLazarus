@@ -2,56 +2,298 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Circo Pititico - Lazarus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circo Pititico - Lazarus Assessoria & Projetos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-circo">
+
   <!-- HEADER -->
   <header class="header">
-    <div class="container">
-      <a href="index.html" class="logo">▲ LAZARUS</a>
-      <ul class="nav-links">
-        <li><a href="index.html">INÍCIO</a></li>
-        <li><a href="sobre.html">A LAZARUS</a></li>
-        <li><a href="servicos.html">SERVIÇOS</a></li>
-        <li><a href="projetos.html" class="active">PROJETOS</a></li>
-        <li><a href="captacao.html">CAPTAÇÃO</a></li>
-        <li><a href="#">CONTATO</a></li>
-      </ul>
-      <a href="#" class="btn-header">QUERO APOIAR</a>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-symbol">▲</div>
+        <div class="logo-text">
+          <span class="brand-name">LAZARUS</span>
+          <span class="brand-sub">ASSESSORIA & PROJETOS</span>
+        </div>
+      </a>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">INÍCIO</a></li>
+          <li><a href="sobre.html">A LAZARUS</a></li>
+          <li><a href="servicos.html">SERVIÇOS</a></li>
+          <li><a href="projetos.html">PROJETOS</a></li>
+          <li><a href="captacao.html">CAPTAÇÃO</a></li>
+          <li><a href="editais.html">EDITAIS</a></li>
+          <li class="dropdown"><a href="#">CONTEÚDO <i class="fa-solid fa-chevron-down"></i></a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </nav>
+
+      <a href="contato.html" class="btn btn-header">
+        <i class="fa-regular fa-heart"></i> QUERO APOIAR
+        <small style="display:block; font-size:7px; font-weight:normal; margin-top:-2px;">DOE OU PATROCINE</small>
+      </a>
     </div>
   </header>
 
-  <!-- HERO CIRCO PITITICO (Layout Amarelo) -->
-  <section class="hero-yellow">
-    <div class="container hero-yellow-grid">
-      <div>
-        <h1 style="color: #c2185b;">CIRCO PITITICO</h1>
-        <h2>Alegria que acolhe.<br>Afeto que transforma.</h2>
-        <p>Levamos a arte da palhaçaria hospitalar para humanizar ambientes de saúde, levando leveza, esperança e sorrisos para pacientes, familiares e profissionais.</p>
-      </div>
-      <div class="hero-yellow-img">
-        <img src="https://picsum.photos/600/400?random=1" alt="Doutores Pititicos">
+  <!-- BANNER HERO AMARELO LARGURA TOTAL -->
+  <section class="circo-banner-hero">
+    <div class="container hero-banner-container">
+      <img src="Circo Pititico_01.jpg" alt="Circo Pititico Banner" class="hero-banner-img">
+    </div>
+  </section>
+
+  <!-- FAIXA DE 5 PILARES (CARDS) -->
+  <section class="section-pilares-new">
+    <div class="container">
+      <div class="pilares-grid-5">
+        
+        <div class="pilar-card-new">
+          <div class="pilar-icon-yellow"><i class="fa-solid fa-palette"></i></div>
+          <h3>Arte que educa</h3>
+          <p>Estimulamos a criatividade, o olhar sensível e o desenvolvimento humano.</p>
+        </div>
+
+        <div class="pilar-card-new">
+          <div class="pilar-icon-red"><i class="fa-solid fa-people-group"></i></div>
+          <h3>Inclusão e diversidade</h3>
+          <p>Espetáculos acessíveis e intervenções que valorizam todas as pessoas.</p>
+        </div>
+
+        <div class="pilar-card-new">
+          <div class="pilar-icon-blue"><i class="fa-solid fa-bus"></i></div>
+          <h3>Itinerante e popular</h3>
+          <p>Levamos o circo para onde o acesso à cultura ainda é um desafio.</p>
+        </div>
+
+        <div class="pilar-card-new">
+          <div class="pilar-icon-purple"><i class="fa-regular fa-heart"></i></div>
+          <h3>Impacto social</h3>
+          <p>Atuamos em escolas, hospitais, comunidades e projetos sociais com alegria e empatia.</p>
+        </div>
+
+        <div class="pilar-card-new">
+          <div class="pilar-icon-yellow"><i class="fa-solid fa-star"></i></div>
+          <h3>Mais de 10 anos de estrada</h3>
+          <p>Uma trajetória construída com dedicação, amor e muitos sorrisos.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- RESULTADOS E NÚMEROS -->
-  <section style="padding: 50px 0;">
+  <!-- SEÇÃO DE GALERIA E CATEGORIAS DA NOVA ARTE -->
+  <section class="section-atividades-circo">
     <div class="container">
-      <h3 style="margin-bottom: 20px; color: var(--navy-main);">NOSSOS RESULTADOS</h3>
-      <div class="grid-4 text-center">
-        <div class="card"><h2>+60 mil</h2><p>Pessoas impactadas diretamente</p></div>
-        <div class="card"><h2>+5 mil</h2><p>Intervenções realizadas</p></div>
-        <div class="card"><h2>1</h2><p>Hospital parceiro (Hospital do Câncer)</p></div>
-        <div class="card"><h2>+12 mil</h2><p>Pacientes e profissionais alcançados</p></div>
+      
+      <!-- ABAS / TÍTULOS DE CATEGORIAS COM IMAGENS CONFORME O LAYOUT -->
+      <div class="atividades-gallery-grid">
+        
+        <!-- Categoria Espetáculos -->
+        <div class="atividade-col">
+          <h3 class="category-title">Espetáculos</h3>
+          <div class="gallery-thumbs-row">
+            <img src="Pititico_3 porquinhas.jpg" alt="Espetáculo 1">
+            <img src="Pititico_Hoje vai ter Festa.jpg" alt="Espetáculo 2">
+          </div>
+          <div class="atividade-desc">
+            <h4>As 3 Porquinhas</h4>
+            <p>Prepare-se para um clássico totalmente reinventado, cheio de humor contagiante, músicas cativantes e muita interação com o público. Uma comédia cheia de trapalhadas para divertir toda a família!</p>
+            
+            <h4 style="margin-top: 12px;">Hoje vai ter Festa!</h4>
+            <p>O que acontece quando cinco palhaços atrapalhados descobrem que precisam preparar uma festa e os convidados — ou seja, vocês — já estão esperando? O resultado é uma confusão deliciosamente divertida! Venha rir, se emocionar e fazer parte dessa grande FESTA!</p>
+          </div>
+        </div>
+
+        <!-- Categoria Hospital -->
+        <div class="atividade-col">
+          <h3 class="category-title">Hospital</h3>
+          <div class="gallery-thumbs-single">
+            <img src="https://picsum.photos/400/300?random=88" alt="Doutores Pititicos em hospital">
+          </div>
+          <div class="atividade-desc">
+            <h4>Doutores Pititicos</h4>
+            <p>Os Doutores Pititicos levam a magia do circo para dentro dos hospitais em intervenções cênicas focadas na saúde emocional. Quebrando a frieza da rotina clínica, os palhaços interagem com sensibilidade e respeito ao ritmo de cada paciente. O resultado é um ambiente mais leve, profissionais menos estressados e corações cheios de força para continuar lutando.</p>
+          </div>
+        </div>
+
+        <!-- Categoria Empresarial -->
+        <div class="atividade-col">
+          <h3 class="category-title">Empresarial</h3>
+          <div class="gallery-thumbs-single">
+            <img src="Pititico_Eventos.jpg" alt="Intervenção empresarial">
+          </div>
+          <div class="atividade-desc">
+            <h4>Intervenções em Empresas</h4>
+            <p>Por que levar o palhaço para dentro da sua empresa? Porque rir junto aproxima, educa e protege! Seja para campanhas de conscientização, treinamentos ou datas especiais, o Grupo Circo Pititico cria momentos sob medida para o seu time!</p>
+          </div>
+        </div>
+
+        <!-- Categoria Oficinas -->
+        <div class="atividade-col">
+          <h3 class="category-title">Oficinas</h3>
+          <div class="gallery-thumbs-single">
+            <img src="Pititico_Oficinas.jpeg" alt="Oficinas de palhaçaria">
+          </div>
+          <div class="atividade-desc">
+            <h4>Oficina de Palhaçaria</h4>
+            <p>A oficina de palhaçaria dos Doutores Pititicos ensina a arte do riso de forma leve e prática, promovendo um reencontro com sua criança interior para redescobrir o olhar curioso, a escuta ativa e a liberdade de ser feliz.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO NOSSO IMPACTO EM NÚMEROS (CARD AZUL + FOTO PÚBLICO) -->
+  <section class="section-impacto-numeros">
+    <div class="container">
+      <div class="impacto-box-grid">
+        
+        <!-- Lado Esquerdo: Estatísticas -->
+        <div class="impacto-left-navy">
+          <h2>Nosso <span>impacto</span> em números</h2>
+          <div class="title-line-gold"></div>
+
+          <div class="impacto-stats-grid">
+            <div class="imp-card">
+              <i class="fa-regular fa-smile"></i>
+              <strong>+10</strong>
+              <span>anos de história</span>
+            </div>
+
+            <div class="imp-card">
+              <i class="fa-solid fa-people-roof"></i>
+              <strong>+500</strong>
+              <span>apresentações realizadas</span>
+            </div>
+
+            <div class="imp-card">
+              <i class="fa-solid fa-house"></i>
+              <strong>+120</strong>
+              <span>municípios atendidos</span>
+            </div>
+
+            <div class="imp-card">
+              <i class="fa-regular fa-heart"></i>
+              <strong>+150 mil</strong>
+              <span>pessoas impactadas diretamente</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lado Direito: Foto da Plateia -->
+        <div class="impacto-right-photo">
+          <img src="Pititico_Impacto Social.jpg" alt="Circo Pititico apresentação com público cheio">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER PROMOCIONAL INFERIOR DA NOVA ARTE -->
+  <section class="section-banner-promocional">
+    <div class="container">
+      <div class="promo-banner-box">
+        
+        <div class="promo-icon-area">
+          <i class="fa-solid fa-tent"></i>
+        </div>
+
+        <div class="promo-text-area">
+          <h3>Leve o Circo Pititico para o seu evento, escola ou comunidade!</h3>
+          <p>Entre em contato e descubra como transformar seu espaço com arte, alegria e inclusão.</p>
+        </div>
+
+        <div class="promo-buttons-area">
+          <a href="contato.html" class="btn btn-red-promo"><i class="fa-solid fa-envelope"></i> FALE CONOSCO</a>
+          <a href="https://wa.me/5534999099999" target="_blank" class="btn btn-whatsapp-promo"><i class="fa-brands fa-whatsapp"></i> CHAME NO WHATSAPP</a>
+        </div>
+
+        <div class="promo-quote-area">
+          <p>“O circo é o lugar onde a imaginação se encontra com o coração.”</p>
+          <i class="fa-solid fa-star star-icon"></i>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container"><p>© 2024 Lazarus Assessoria & Projetos.</p></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo logo-white">
+          <div class="logo-symbol">▲</div>
+          <div class="logo-text">
+            <span class="brand-name">LAZARUS</span>
+            <span class="brand-sub">ASSESSORIA & PROJETOS</span>
+          </div>
+        </div>
+        <p>Conectamos ideias, pessoas e oportunidades para transformar projetos em impacto social, cultural, educacional e institucional.</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>NAVEGAÇÃO</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">A Lazarus</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="captacao.html">Captação</a></li>
+          <li><a href="editais.html">Editais</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>PROJETOS</h4>
+        <ul>
+          <li><a href="associacao.html">Associação Estrela do Oriente</a></li>
+          <li><a href="circo.html">Circo Pititico</a></li>
+          <li><a href="circo.html">Doutores Pititicos</a></li>
+          <li><a href="projetos.html">Uma Palavra</a></li>
+          <li><a href="projetos.html">Se Manca</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>CONTATO</h4>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-phone"></i> (34) 9 9909-9999</li>
+          <li><i class="fa-solid fa-envelope"></i> contato@lazarusprojetos.com.br</li>
+          <li><i class="fa-solid fa-location-dot"></i> Uberlândia – MG</li>
+        </ul>
+        <a href="https://wa.me/5534999099999" class="btn-whatsapp-footer">
+          <i class="fa-brands fa-whatsapp"></i> Fale conosco pelo WhatsApp
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h4>APOIE NOSSOS PROJETOS</h4>
+        <p style="font-size: 11px; margin-bottom: 12px; color: #cbd5e1;">Sua contribuição ajuda a manter a arte viva e acessível a quem mais precisa.</p>
+        <a href="contato.html" class="btn btn-yellow-fill" style="width:100%; justify-content:center;">
+          <i class="fa-regular fa-heart"></i> QUERO APOIAR
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Lazarus Assessoria & Projetos. Todos os direitos reservados.</p>
+    </div>
   </footer>
+    <script src="script.js"></script>
 </body>
 </html>

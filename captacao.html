@@ -2,51 +2,385 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Captação de Recursos - Lazarus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captação de Recursos - Lazarus Assessoria & Projetos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header class="header">
-    <div class="container">
-      <a href="index.html" class="logo">▲ LAZARUS</a>
-      <ul class="nav-links">
-        <li><a href="index.html">INÍCIO</a></li>
-        <li><a href="sobre.html">A LAZARUS</a></li>
-        <li><a href="servicos.html">SERVIÇOS</a></li>
-        <li><a href="projetos.html">PROJETOS</a></li>
-        <li><a href="captacao.html" class="active">CAPTAÇÃO</a></li>
-        <li><a href="#">CONTATO</a></li>
-      </ul>
-      <a href="#" class="btn-header">QUERO APOIAR</a>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-symbol">▲</div>
+        <div class="logo-text">
+          <span class="brand-name">LAZARUS</span>
+          <span class="brand-sub">ASSESSORIA & PROJETOS</span>
+        </div>
+      </a>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">INÍCIO</a></li>
+          <li><a href="sobre.html">A LAZARUS</a></li>
+          <li><a href="servicos.html">SERVIÇOS</a></li>
+          <li><a href="projetos.html">PROJETOS</a></li>
+          <li><a href="captacao.html" class="active">CAPTAÇÃO</a></li>
+          <li><a href="editais.html">EDITAIS</a></li>
+          <li class="dropdown"><a href="#">CONTEÚDO <i class="fa-solid fa-chevron-down"></i></a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-header">
+        <i class="fa-regular fa-heart"></i> QUERO APOIAR
+        <small style="display:block; font-size:7px; font-weight:normal; margin-top:-2px;">DOE OU PATROCINE</small>
+      </a>
     </div>
   </header>
 
-  <!-- HERO CAPTAÇÃO -->
-  <section class="hero-dark">
-    <div class="container">
-      <span class="tag">CAPTAÇÃO DE RECURSOS</span>
-      <h1>Conectamos seu projeto<br>a oportunidades que geram <span style="color:var(--green-light)">impacto.</span></h1>
-      <p>A Lazarus oferece estratégias completas para a captação de recursos junto a pessoas físicas, empresas, instituições e editais públicos.</p>
-    </div>
-  </section>
+  <!-- HERO SECTION - CAPTAÇÃO DE RECURSOS -->
+  <section class="captacao-hero">
+    <div class="container captacao-hero-grid">
+      <div class="captacao-hero-text">
+        <span class="hero-tag">CAPTAÇÃO DE RECURSOS</span>
+        <h1>Conectamos seu projeto<br>a oportunidades que<br>geram <span class="highlight">impacto.</span></h1>
+        <p>
+          A Lazarus oferece estratégias e soluções completas para a captação de recursos junto a pessoas físicas, empresas, instituições e editais públicos, garantindo segurança, transparência e resultados para o seu projeto.
+        </p>
+        <div class="captacao-hero-buttons">
+          <a href="contato.html" class="btn btn-green-fill"><i class="fa-solid fa-paper-plane"></i> FALE COM A LAZARUS</a>
+          <a href="projetos.html" class="btn btn-outline-white"><i class="fa-regular fa-eye"></i> CONHEÇA NOSSOS PROJETOS</a>
+        </div>
+      </div>
 
-  <!-- PASSO A PASSO COMO FUNCIONA -->
-  <section style="padding: 60px 0;">
-    <div class="container">
-      <h2 style="text-align: center; margin-bottom: 30px;">Como funciona nossa captação</h2>
-      <div class="steps-grid">
-        <div class="step-card"><div class="step-num">1</div><h4>Diagnóstico</h4><p>Entendemos seu projeto e potencial.</p></div>
-        <div class="step-card"><div class="step-num">2</div><h4>Planejamento</h4><p>Estratégias de captação alinhadas.</p></div>
-        <div class="step-card"><div class="step-num">3</div><h4>Prospecção</h4><p>Identificamos apoiadores ideais.</p></div>
-        <div class="step-card"><div class="step-num">4</div><h4>Apresentação</h4><p>Elaboramos materiais e apresentamos.</p></div>
-        <div class="step-card"><div class="step-num">5</div><h4>Negociação</h4><p>Conduzimos até a formalização.</p></div>
-        <div class="step-card"><div class="step-num">6</div><h4>Acompanhamento</h4><p>Execução e prestação de contas.</p></div>
+      <div class="captacao-hero-image">
+        <img src="https://picsum.photos/700/420?random=99" alt="Mão segurando muda de planta com terra">
       </div>
     </div>
   </section>
 
+  <!-- SEÇÃO 1: POR QUE CAPTAR RECURSOS? -->
+  <section class="section-porque-captar">
+    <div class="container">
+      <div class="section-header-center">
+        <h2>Por que captar recursos?</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="porque-grid">
+        <!-- 1 -->
+        <div class="porque-card">
+          <div class="porque-icon"><i class="fa-solid fa-piggy-bank"></i></div>
+          <h3>Sustentabilidade</h3>
+          <p>Garante a continuidade das ações e a manutenção do impacto gerado.</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="porque-card">
+          <div class="porque-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Mais oportunidades</h3>
+          <p>Amplia o alcance do projeto e possibilita novas realizações.</p>
+        </div>
+
+        <!-- 3 -->
+        <div class="porque-card">
+          <div class="porque-icon"><i class="fa-solid fa-people-arrows"></i></div>
+          <h3>Parcerias estratégicas</h3>
+          <p>Conecta seu projeto a empresas e instituições alinhadas às suas causas.</p>
+        </div>
+
+        <!-- 4 -->
+        <div class="porque-card">
+          <div class="porque-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <h3>Recursos para transformar</h3>
+          <p>Viabiliza iniciativas culturais, sociais, educacionais, esportivas e institucionais.</p>
+        </div>
+
+        <!-- 5 -->
+        <div class="porque-card">
+          <div class="porque-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Aumento de impacto</h3>
+          <p>Potencializa resultados e beneficia mais pessoas e comunidades.</p>
+        </div>
+
+        <!-- 6 -->
+        <div class="porque-card">
+          <div class="porque-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Transparência e confiança</h3>
+          <p>Gestão responsável que gera credibilidade e fortalece seu projeto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2: COMO FUNCIONA NOSSA CAPTAÇÃO (PASSO A PASSO 1-6) -->
+  <section class="section-como-funciona">
+    <div class="container">
+      <div class="section-header-center">
+        <h2>Como funciona nossa captação</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="captacao-steps-flex">
+        <!-- Passo 1 -->
+        <div class="captacao-step">
+          <div class="step-badge-number">1</div>
+          <div class="step-icon-box"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <h4>Diagnóstico</h4>
+          <p>Entendemos seu projeto, suas necessidades e seu potencial.</p>
+        </div>
+
+        <div class="step-arrow-line"></div>
+
+        <!-- Passo 2 -->
+        <div class="captacao-step">
+          <div class="step-badge-number">2</div>
+          <div class="step-icon-box"><i class="fa-solid fa-clipboard-list"></i></div>
+          <h4>Planejamento</h4>
+          <p>Definimos estratégias de captação alinhadas ao seu objetivo.</p>
+        </div>
+
+        <div class="step-arrow-line"></div>
+
+        <!-- Passo 3 -->
+        <div class="captacao-step">
+          <div class="step-badge-number">3</div>
+          <div class="step-icon-box"><i class="fa-solid fa-handshake"></i></div>
+          <h4>Prospecção</h4>
+          <p>Identificamos e abordamos possíveis apoiadores e fontes de recursos.</p>
+        </div>
+
+        <div class="step-arrow-line"></div>
+
+        <!-- Passo 4 -->
+        <div class="captacao-step">
+          <div class="step-badge-number">4</div>
+          <div class="step-icon-box"><i class="fa-solid fa-file-signature"></i></div>
+          <h4>Apresentação</h4>
+          <p>Elaboramos materiais profissionais e apresentamos seu projeto.</p>
+        </div>
+
+        <div class="step-arrow-line"></div>
+
+        <!-- Passo 5 -->
+        <div class="captacao-step">
+          <div class="step-badge-number">5</div>
+          <div class="step-icon-box"><i class="fa-solid fa-bullseye"></i></div>
+          <h4>Negociação</h4>
+          <p>Conduzimos as conversas até a formalização do apoio ou patrocínio.</p>
+        </div>
+
+        <div class="step-arrow-line"></div>
+
+        <!-- Passo 6 -->
+        <div class="captacao-step">
+          <div class="step-badge-number">6</div>
+          <div class="step-icon-box"><i class="fa-solid fa-chart-column"></i></div>
+          <h4>Acompanhamento</h4>
+          <p>Acompanhamos todo o processo de execução e prestação de contas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: FONTES DE CAPTAÇÃO -->
+  <section class="section-fontes-captacao">
+    <div class="container">
+      <div class="section-header-center">
+        <h2>Fontes de captação</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="fontes-grid">
+        <!-- 1 -->
+        <div class="fonte-card">
+          <div class="fonte-icon"><i class="fa-solid fa-file-invoice"></i></div>
+          <h3>Leis de Incentivo</h3>
+          <p>Rouanet (Federal), ICMS (Estadual), ISS e Leis Municipais de Incentivo à Cultura.</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="fonte-card">
+          <div class="fonte-icon"><i class="fa-solid fa-landmark"></i></div>
+          <h3>Editais Públicos</h3>
+          <p>Oportunidades em editais municipais, estaduais e federais.</p>
+        </div>
+
+        <!-- 3 -->
+        <div class="fonte-card">
+          <div class="fonte-icon"><i class="fa-solid fa-building"></i></div>
+          <h3>Patrocínios Privados</h3>
+          <p>Empresas que investem em projetos alinhados aos seus valores.</p>
+        </div>
+
+        <!-- 4 -->
+        <div class="fonte-card">
+          <div class="fonte-icon"><i class="fa-solid fa-heart-circle-check"></i></div>
+          <h3>Doações e Crowdfunding</h3>
+          <p>Mobilização de pessoas e comunidades em torno de causas relevantes.</p>
+        </div>
+
+        <!-- 5 -->
+        <div class="fonte-card">
+          <div class="fonte-icon"><i class="fa-solid fa-users-gear"></i></div>
+          <h3>Parcerias Institucionais</h3>
+          <p>Universidades, institutos, fundações e organizações da sociedade civil.</p>
+        </div>
+
+        <!-- 6 -->
+        <div class="fonte-card">
+          <div class="fonte-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h3>Incentivo Fiscal</h3>
+          <p>Pessoas físicas e jurídicas podem destinar parte do imposto devido para apoiar seu projeto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4: PRINCIPAIS LEIS DE INCENTIVO (BLOCO NAVY) -->
+  <section class="section-leis-incentivo">
+    <div class="container">
+      <h2 class="section-title-white">Principais Leis de Incentivo</h2>
+
+      <div class="leis-grid">
+        <!-- Lei Rouanet -->
+        <div class="lei-card">
+          <div class="lei-logo-area">
+            <div class="symbol-rouanet">✳</div>
+            <div>
+              <strong>Lei Rouanet</strong>
+              <small>Incentivo a Projetos Culturais</small>
+            </div>
+          </div>
+          <p>Incentivo Federal que permite a empresas e pessoas físicas destinarem até 6% do imposto devido para apoiar projetos culturais em todo o Brasil.</p>
+          <a href="contato.html" class="btn-sm-outline-green">SAIBA MAIS</a>
+        </div>
+
+        <!-- ICMS Cultural -->
+        <div class="lei-card">
+          <div class="lei-logo-area">
+            <div class="symbol-icms">▲</div>
+            <div>
+              <strong>ICMS CULTURAL</strong>
+              <small>MINAS GERAIS</small>
+            </div>
+          </div>
+          <p>Incentivo Estadual de Minas Gerais que possibilita a empresas destinarem até 3% do ICMS devido para projetos aprovados pela Secretaria de Cultura.</p>
+          <a href="contato.html" class="btn-sm-outline-green">SAIBA MAIS</a>
+        </div>
+
+        <!-- Leis Municipais -->
+        <div class="lei-card">
+          <div class="lei-logo-area">
+            <div class="symbol-municipal"><i class="fa-solid fa-building-columns"></i></div>
+            <div>
+              <strong>Leis Municipais</strong>
+              <small>de Incentivo</small>
+            </div>
+          </div>
+          <p>Leis de incentivo municipais que permitem o apoio a projetos por meio de renúncia fiscal de ISS ou outros mecanismos locais.</p>
+          <a href="contato.html" class="btn-sm-outline-green">SAIBA MAIS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5: BANNER DE CTA "SEU APOIO TRANSFORMA!" -->
+  <section class="section-seu-apoio">
+    <div class="container seu-apoio-box">
+      <div class="seu-apoio-left">
+        <div class="heart-icon-circle">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div>
+          <h3>Seu apoio transforma!</h3>
+          <p>Empresas, instituições e pessoas podem ser agentes de mudança. Fale com a Lazarus e descubra como apoiar projetos que geram impacto real na sociedade.</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/5534999099999" target="_blank" class="btn btn-green-fill btn-large">
+        <i class="fa-regular fa-heart"></i> QUERO APOIAR <small>DOE OU PATROCINE</small>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container"><p>© 2024 Lazarus Assessoria & Projetos.</p></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo logo-white">
+          <div class="logo-symbol">▲</div>
+          <div class="logo-text">
+            <span class="brand-name">LAZARUS</span>
+            <span class="brand-sub">ASSESSORIA & PROJETOS</span>
+          </div>
+        </div>
+        <p>Conectamos ideias, pessoas e oportunidades para transformar projetos em impacto social, cultural, educacional e institucional.</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>NAVEGAÇÃO</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">A Lazarus</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="captacao.html">Captação</a></li>
+          <li><a href="editais.html">Editais</a></li>
+          <li><a href="#">Conteúdo</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>SERVIÇOS</h4>
+        <ul>
+          <li><a href="#">Elaboração de Projetos</a></li>
+          <li><a href="#">Captação de Recursos</a></li>
+          <li><a href="#">Gestão de Projetos</a></li>
+          <li><a href="#">Prestação de Contas</a></li>
+          <li><a href="#">Consultoria</a></li>
+          <li><a href="#">Treinamentos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>CONTATO</h4>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-phone"></i> (34) 9 9909-9999</li>
+          <li><i class="fa-solid fa-envelope"></i> contato@lazarusprojetos.com.br</li>
+          <li><i class="fa-solid fa-location-dot"></i> Uberlândia – MG</li>
+        </ul>
+        <a href="https://wa.me/5534999099999" class="btn-whatsapp-footer">
+          <i class="fa-brands fa-whatsapp"></i> Fale conosco pelo WhatsApp
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h4>INSTITUCIONAL</h4>
+        <ul>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">LGPD</a></li>
+          <li><a href="#">Transparência</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Lazarus Assessoria & Projetos. Todos os direitos reservados.</p>
+    </div>
   </footer>
+<script src="script.js"></script>
+
 </body>
 </html>
