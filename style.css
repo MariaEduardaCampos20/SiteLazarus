@@ -114,7 +114,7 @@ body {
 /* --- HERO SECTION --- */
 .hero {
   position: relative;
-  background-image: url('https://picsum.photos/1920/1080?random=9');
+  background-image: url('capa.jpeg');
   background-size: cover;
   background-position: center;
   min-height: 520px;
