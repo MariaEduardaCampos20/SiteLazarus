@@ -1844,17 +1844,62 @@ body {
   }
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 6px 4px;
+}
+
 @media (max-width: 900px) {
   .header-container {
-    flex-direction: column;
-    height: auto;
-    padding: 15px;
+    position: relative;
+    height: 70px;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
   }
 
   .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 15px 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    gap: 0;
+    background-color: var(--primary-navy);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 14px 20px;
   }
 
   .footer-grid {
@@ -1867,6 +1912,13 @@ body {
 
   .cards-grid-6 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-header {
+    font-size: 10px;
+    padding: 6px 10px;
   }
 }
 
