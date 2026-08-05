@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; 
 }
 
 :root {
@@ -4202,5 +4205,27 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 @media (max-width: 900px) {
   .incentivos-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  img, div, iframe, section {
+    max-width: 100% !important;
+  }
+
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* Ajuste do menu no mobile */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
   }
 }
