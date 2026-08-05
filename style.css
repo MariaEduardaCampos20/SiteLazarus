@@ -1096,7 +1096,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 
 .servicos-hero-text h1 {
   font-size: 38px;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1.15;
   margin-bottom: 20px;
 }
@@ -1785,7 +1785,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 
 .captacao-hero-text h1 {
   font-size: 38px;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1.15;
   margin-bottom: 20px;
 }
