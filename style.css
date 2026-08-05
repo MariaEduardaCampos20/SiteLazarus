@@ -1,48 +1,6 @@
 /* --- RESET E ESTILOS BASE --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden; 
-}
-
-:root {
-  --primary-navy: #001935;
-  --secondary-navy: #002b52;
-  --brand-green: #388e3c;
-  --light-green: #e8f5e9;
-  --bg-light: #f8f9fa;
-  --text-dark: #1f2937;
-  --text-gray: #6b7280;
-  --white: #ffffff;
-  --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
-}
-
-body {
-  font-family: var(--font-main);
-  color: var(--text-dark);
-  background-color: var(--white);
-  line-height: 1.6;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 /* --- HEADER --- */
-.header {
-  background-color: var(--primary-navy);
-  color: var(--white);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-}
 
 .header-container {
   display: flex;
@@ -52,25 +10,19 @@ body {
 }
 
 /* --- ALINHAMENTO E TAMANHO DA LOGO NO HEADER --- */
-.logo{
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  height: 100%;
-}
 
 .logo img {
-  max-height: 150px; /* Ajuste a altura máxima conforme o gosto (ex: 40px a 52px) */
-  max-height: 150px; /* Ajuste a altura máxima conforme o gosto (ex: 40px a 52px) */
-  width: auto;      /* Mantém a proporção correta da imagem */
+  max-height: 150px;
+  width: auto;
   object-fit: contain;
   display: block;
   transition: transform 0.2s ease;
 }
 
 .logo img:hover {
-  transform: scale(1.03); /* Efeito suave ao passar o mouse */
+  transform: scale(1.03);
 }
+
 .brand-name {
   font-weight: 800;
   font-size: 18px;
@@ -83,40 +35,8 @@ body {
   color: #a0aec0;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 18px;
-}
-
-.nav-links a {
-  color: #e2e8f0;
-  text-decoration: none;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  color: #4ade80;
-}
-
-.btn-header {
-  background-color: var(--brand-green);
-  color: var(--white);
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 700;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
 /* --- HERO SECTION --- */
+
 .hero {
   position: relative;
   background-image: url('capa.jpeg');
@@ -183,12 +103,28 @@ body {
   transition: all 0.3s;
 }
 
-.btn-green { background-color: var(--brand-green); color: var(--white); }
-.btn-outline { border-color: var(--white); color: var(--white); }
-.btn-white { background-color: var(--white); color: var(--primary-navy); }
-.btn-dark { background-color: var(--secondary-navy); color: var(--white); }
+.btn-green {
+  background-color: var(--brand-green);
+  color: var(--white);
+}
+
+.btn-outline {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--primary-navy);
+}
+
+.btn-dark {
+  background-color: var(--secondary-navy);
+  color: var(--white);
+}
 
 /* --- STATS SECTION --- */
+
 .stats-section {
   background-color: var(--white);
   padding: 25px 0;
@@ -202,30 +138,15 @@ body {
   text-align: center;
 }
 
-.stat-card i {
-  font-size: 24px;
-  color: var(--brand-green);
-  margin-bottom: 8px;
-}
-
-.stat-number {
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--primary-navy);
-}
-
-.stat-label {
-  font-size: 11px;
-  color: var(--text-gray);
-  font-weight: 600;
-}
-
 /* --- SECTIONS & CARDS --- */
+
 .section {
   padding: 60px 0;
 }
 
-.bg-light { background-color: var(--bg-light); }
+.bg-light {
+  background-color: var(--bg-light);
+}
 
 .section-header {
   display: flex;
@@ -241,13 +162,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-.link-see-all {
-  color: var(--brand-green);
-  font-weight: 700;
-  font-size: 12px;
-  text-decoration: none;
-}
-
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -260,12 +174,6 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   border: 1px solid #e5e7eb;
-}
-
-.card-img {
-  height: 180px;
-  background-size: cover;
-  background-position: center;
 }
 
 .card-body {
@@ -284,25 +192,25 @@ body {
   margin-bottom: 12px;
 }
 
-.badge {
-  display: inline-block;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 10px;
-  font-weight: 700;
+.badge-green {
+  background-color: #dcfce7;
+  color: #15803d;
 }
 
-.badge-green { background-color: #dcfce7; color: #15803d; }
-.badge-blue { background-color: #dbeafe; color: #1d4ed8; }
-.badge-yellow { background-color: #fef3c7; color: #b45309; }
+.badge-blue {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge-yellow {
+  background-color: #fef3c7;
+  color: #b45309;
+}
 
 /* --- ÁREAS DE ATUAÇÃO E MVV --- */
-.text-center { text-align: center; }
-.section-title-center {
-  font-size: 20px;
-  color: var(--primary-navy);
-  margin-bottom: 30px;
-  font-weight: 800;
+
+.text-center {
+  text-align: center;
 }
 
 .areas-grid {
@@ -371,60 +279,13 @@ body {
 }
 
 /* --- CTA BANNER --- */
-.cta-banner {
-  background-color: var(--primary-navy);
-  color: var(--white);
-  padding: 40px 0;
-}
-
-.cta-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.cta-sub {
-  font-size: 11px;
-  color: #4ade80;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.cta-text h3 {
-  font-size: 24px;
-  margin: 4px 0 8px;
-}
 
 .cta-text p {
   color: #cbd5e1;
   font-size: 13px;
 }
 
-.cta-actions {
-  display: flex;
-  gap: 12px;
-}
-
-.btn-green-fill { background: var(--brand-green); color: var(--white); }
-.btn-white-fill { background: var(--white); color: var(--primary-navy); }
-
 /* --- FOOTER --- */
-.footer {
-  background-color: #001124;
-  color: #94a3b8;
-  padding-top: 50px;
-  font-size: 12px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-  gap: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #1e293b;
-}
 
 .footer-brand p {
   margin: 15px 0;
@@ -469,7 +330,9 @@ body {
   transition: color 0.2s;
 }
 
-.footer-col ul a:hover { color: var(--white); }
+.footer-col ul a:hover {
+  color: var(--white);
+}
 
 .contact-info li {
   display: flex;
@@ -498,77 +361,284 @@ body {
 }
 
 /* --- RESPONSIVIDADE --- */
-@media (max-width: 900px) {
-  .header-container { flex-direction: column; height: auto; padding: 15px; }
-  .nav-links { flex-wrap: wrap; justify-content: center; margin: 15px 0; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-}
-
-@media (max-width: 600px) {
-  .hero-content h1 { font-size: 28px; }
-  .footer-grid { grid-template-columns: 1fr; }
-  .cta-flex { flex-direction: column; text-align: center; }
-}
 
 /* --- RESET E VARIÁVEIS --- */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
+  --primary-navy: #001935;
+  --secondary-navy: #002b52;
+  --brand-green: #388e3c;
+  --light-green: #e8f5e9;
+  --bg-light: #f8fafc;
+  --text-dark: #1e293b;
+  --text-gray: #6b7280;
+  --white: #ffffff;
+  --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
   --navy-dark: #001124;
   --navy-main: #001935;
   --navy-card: #00254a;
   --green-main: #388e3c;
   --green-light: #4ade80;
   --bg-yellow: #ffcc00;
-  --bg-light: #f8fafc;
-  --text-dark: #1e293b;
   --text-muted: #64748b;
-  --white: #ffffff;
 }
-body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); background: #fff; line-height: 1.5; }
-.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: var(--text-dark);
+  line-height: 1.5;
+  background: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 /* --- HEADER & FOOTER UNIFICADOS --- */
-.header { background: var(--navy-main); color: #fff; position: sticky; top: 0; z-index: 1000; height: 70px; display: flex; align-items: center; }
-.header .container { display: flex; align-items: center; justify-content: space-between; }
-.logo { display: flex; align-items: center; gap: 8px; text-decoration: none; color: #fff; font-weight: bold; }
-.nav-links { display: flex; gap: 16px; list-style: none; }
-.nav-links a { color: #cbd5e1; text-decoration: none; font-size: 11px; font-weight: 700; text-transform: uppercase; }
-.nav-links a:hover, .nav-links a.active { color: var(--green-light); }
-.btn-header { background: var(--green-main); color: #fff; padding: 8px 16px; border-radius: 4px; font-size: 12px; font-weight: 700; text-decoration: none; }
 
-.footer { background: var(--navy-dark); color: #94a3b8; padding: 50px 0 20px; font-size: 12px; }
-.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
-.footer h4 { color: #fff; font-size: 13px; margin-bottom: 15px; }
-.footer ul { list-style: none; }
-.footer ul li { margin-bottom: 8px; }
-.footer a { color: #94a3b8; text-decoration: none; }
+.header {
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  background: var(--navy-main);
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  gap: 8px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--green-light);
+}
+
+.btn-header {
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--green-main);
+}
+
+.footer {
+  color: #94a3b8;
+  padding-top: 50px;
+  font-size: 12px;
+  background: var(--navy-dark);
+  padding: 50px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #1e293b;
+  margin-bottom: 40px;
+}
+
+.footer h4 {
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  color: #94a3b8;
+  text-decoration: none;
+}
 
 /* --- HERO AMARELO (Circo Pititico & Estrela do Oriente) --- */
-.hero-yellow { background: var(--bg-yellow); padding: 50px 0; border-bottom-left-radius: 60px; border-bottom-right-radius: 60px; }
-.hero-yellow-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.hero-yellow h1 { font-size: 36px; color: var(--navy-main); font-weight: 900; line-height: 1.2; margin-bottom: 15px; }
-.hero-yellow-img img { width: 100%; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+
+.hero-yellow {
+  background: var(--bg-yellow);
+  padding: 50px 0;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.hero-yellow-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-yellow h1 {
+  font-size: 36px;
+  color: var(--navy-main);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-yellow-img img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
 
 /* --- HERO ESCURO PADRÃO (Projetos, Captação, Serviços, Sobre) --- */
-.hero-dark { background: linear-gradient(90deg, var(--navy-dark) 40%, rgba(0,17,36,0.8)), url('https://picsum.photos/1200/400?random=20') center/cover; color: #fff; padding: 60px 0; }
-.hero-dark .tag { color: var(--green-light); font-size: 11px; font-weight: 700; letter-spacing: 1px; }
-.hero-dark h1 { font-size: 36px; margin: 10px 0; font-weight: 800; }
-.hero-dark p { color: #cbd5e1; max-width: 600px; font-size: 14px; margin-bottom: 20px; }
+
+.hero-dark {
+  background: linear-gradient(90deg, var(--navy-dark) 40%, rgba(0,17,36,0.8)), url('https://picsum.photos/1200/400?random=20') center/cover;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.hero-dark .tag {
+  color: var(--green-light);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-dark h1 {
+  font-size: 36px;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+.hero-dark p {
+  color: #cbd5e1;
+  max-width: 600px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
 
 /* --- GRADES DE CARDS E ESTRUTURAS --- */
-.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
-.grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
 
-.card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
-.card-img { height: 160px; border-radius: 6px; background-size: cover; margin-bottom: 12px; }
-.badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; margin-top: 10px; }
-.badge-execution { background: #dcfce7; color: #15803d; }
-.badge-finished { background: #dbeafe; color: #1d4ed8; }
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.card-img {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.badge-execution {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.badge-finished {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
 
 /* --- SEÇÃO PASSO A PASSO (Captação / Serviços) --- */
-.steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 30px; }
-.step-card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px 10px; text-align: center; border-radius: 8px; }
-.step-num { width: 30px; height: 30px; background: var(--navy-main); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: bold; }
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.step-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.step-num {
+  width: 30px;
+  height: 30px;
+  background: var(--navy-main);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  font-weight: bold;
+}
 
 /* =========================================
    FORMULÁRIO DE CONTATO
@@ -756,8 +826,8 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   font-size: 10px;
   line-height: 1.5;
 }
-@media (max-width: 700px) {
 
+@media (max-width: 700px) {
   .contact-form-card {
     padding: 22px;
     border-radius: 14px;
@@ -772,7 +842,9 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
     font-size: 22px;
   }
 }
+
 /* --- ESTILOS ESPECÍFICOS DA PÁGINA SOBRE --- */
+
 .sobre-hero {
   background: linear-gradient(135deg, #001124 0%, #001935 100%);
   color: #fff;
@@ -851,17 +923,18 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Experiência */
+
 .experiencia-section {
   padding: 50px 0;
   background: #fff;
 }
 
 .section-title-center {
-  text-align: center;
   font-size: 18px;
-  font-weight: 800;
   color: var(--navy-main);
   margin-bottom: 30px;
+  font-weight: 800;
+  text-align: center;
   letter-spacing: 0.5px;
 }
 
@@ -892,6 +965,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Especialização e Resultados */
+
 .especializacao-resultados-section {
   padding: 50px 0;
   background: var(--bg-light);
@@ -964,6 +1038,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Diferenciais */
+
 .diferenciais-section {
   padding: 50px 0;
   background: #fff;
@@ -996,6 +1071,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Parceiros */
+
 .partners-section {
   padding: 40px 0;
   background: #fff;
@@ -1032,6 +1108,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* CTA */
+
 .cta-banner {
   background-color: var(--navy-main);
   color: #fff;
@@ -1042,8 +1119,8 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .cta-sub {
@@ -1055,6 +1132,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 
 .cta-text h3 {
   font-size: 18px;
+  margin: 4px 0 8px;
   margin-top: 4px;
 }
 
@@ -1064,15 +1142,27 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   flex-wrap: wrap;
 }
 
-.btn-green-fill { background: var(--green-main); color: #fff; }
-.btn-white-fill { background: #fff; color: var(--navy-main); }
-.btn-outline-white { border: 1px solid #fff; color: #fff; }
+.btn-green-fill {
+  background: var(--green-main);
+  color: #fff;
+}
+
+.btn-white-fill {
+  background: #fff;
+  color: var(--navy-main);
+}
+
+.btn-outline-white {
+  border: 1px solid #fff;
+  color: #fff;
+}
 
 /* ==========================================================================
    ESTILOS EXCLUSIVOS DA TELA DE SERVIÇOS
    ========================================================================== */
 
 /* --- HERO SERVIÇOS COM DIAGONAL E CORTE --- */
+
 .servicos-hero {
   background: linear-gradient(110deg, #001124 0%, #001935 55%, #00254a 100%);
   color: #fff;
@@ -1099,7 +1189,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 
 .servicos-hero-text h1 {
   font-size: 38px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 1.15;
   margin-bottom: 20px;
 }
@@ -1124,6 +1214,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* --- TÍTULO CENTRAL NOSSOS SERVIÇOS --- */
+
 .section-nossos-servicos {
   padding: 60px 0;
   background-color: #fff;
@@ -1156,6 +1247,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* --- GRID DE 6 COLUNAS (2 LINHAS X 6 CARDS) --- */
+
 .servicos-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -1211,6 +1303,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* --- PASSO A PASSO (COMO TRABALHAMOS) --- */
+
 .section-como-trabalhamos {
   background-color: #f1f5f9;
   padding: 50px 0 60px;
@@ -1298,6 +1391,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* --- BANNER CTA ESCURO INFERIOR --- */
+
 .cta-dark-banner {
   background: var(--navy-dark);
   color: #fff;
@@ -1385,28 +1479,13 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* RESPONSIVIDADE DOS SERVIÇOS */
-@media (max-width: 1100px) {
-  .servicos-grid { grid-template-columns: repeat(3, 1fr); }
-  .flow-steps-grid { flex-wrap: wrap; justify-content: center; gap: 20px; }
-  .flow-connector { display: none; }
-}
-
-@media (max-width: 768px) {
-  .servicos-hero-grid { grid-template-columns: 1fr; }
-  .servicos-grid { grid-template-columns: repeat(2, 1fr); }
-  .cta-dark-flex { flex-direction: column; text-align: center; gap: 20px; }
-  .cta-dark-left { flex-direction: column; }
-}
-
-@media (max-width: 480px) {
-  .servicos-grid { grid-template-columns: 1fr; }
-}
 
 /* ==========================================================================
    ESTILOS EXCLUSIVOS DA TELA DE PROJETOS (SEM CARDS EM DESTAQUE)
    ========================================================================== */
 
 /* Hero Projetos */
+
 .projetos-hero {
   background: linear-gradient(110deg, #001124 0%, #001935 60%, #002b52 100%);
   color: #fff;
@@ -1448,6 +1527,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Barra de Números Flutuante */
+
 .stats-floating-section {
   margin-top: -40px;
   position: relative;
@@ -1494,6 +1574,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Bloco Azul de Áreas de Atuação */
+
 .areas-segmentos-section {
   background-color: var(--navy-main);
   color: #fff;
@@ -1540,6 +1621,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Outros Projetos + Sidebar */
+
 .outros-projetos-section {
   padding-bottom: 60px;
 }
@@ -1606,6 +1688,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Card CTA da Lateral */
+
 .cta-sidebar-card {
   background: #f8fafc;
   border: 1px solid #e2e8f0;
@@ -1651,20 +1734,9 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Responsividade de Projetos */
-@media (max-width: 1100px) {
-  .stats-floating-grid { grid-template-columns: repeat(3, 1fr); }
-  .segmentos-grid { grid-template-columns: repeat(3, 1fr); }
-  .outros-projetos-grid { grid-template-columns: 1fr; }
-  .projetos-mini-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 600px) {
-  .projetos-hero-grid { grid-template-columns: 1fr; }
-  .stats-floating-grid { grid-template-columns: repeat(2, 1fr); }
-  .projetos-mini-grid { grid-template-columns: 1fr; }
-}
 
 /* --- PROJETOS EM DESTAQUE (GRADE DE 6 CARDS) --- */
+
 .section-projetos-destaque {
   padding: 50px 0;
   background-color: #fff;
@@ -1686,6 +1758,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* --- SEÇÃO DE ODS (ONU) --- */
+
 .ods-section {
   padding: 60px 0;
   background-color: var(--bg-light);
@@ -1714,9 +1787,17 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   text-align: center;
 }
 
-.ods-header-box.navy { background: var(--navy-main); }
-.ods-header-box.green { background: var(--green-main); }
-.ods-header-box.yellow { background: #d97706; }
+.ods-header-box.navy {
+  background: var(--navy-main);
+}
+
+.ods-header-box.green {
+  background: var(--green-main);
+}
+
+.ods-header-box.yellow {
+  background: #d97706;
+}
 
 .ods-header-box i {
   font-size: 26px;
@@ -1756,23 +1837,51 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* RESPONSIVIDADE ODS E DESTAQUES */
+
 @media (max-width: 1200px) {
-  .cards-grid-6 { grid-template-columns: repeat(3, 1fr); }
+  .cards-grid-6 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 900px) {
-  .ods-grid { grid-template-columns: 1fr; }
-  .cards-grid-6 { grid-template-columns: repeat(2, 1fr); }
+  .header-container {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ods-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 500px) {
-  .cards-grid-6 { grid-template-columns: 1fr; }
+  .cards-grid-6 {
+    grid-template-columns: 1fr;
+  }
 }
+
 /* ==========================================================================
    ESTILOS EXCLUSIVOS DA TELA DE CAPTAÇÃO DE RECURSOS
    ========================================================================== */
 
 /* Hero Captação */
+
 .captacao-hero {
   background: linear-gradient(110deg, #001124 0%, #001935 60%, #002b52 100%);
   color: #fff;
@@ -1788,7 +1897,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 
 .captacao-hero-text h1 {
   font-size: 38px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 1.15;
   margin-bottom: 20px;
 }
@@ -1816,6 +1925,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Por que captar recursos */
+
 .section-porque-captar {
   padding: 60px 0;
   background-color: #fff;
@@ -1859,6 +1969,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Como funciona nossa captação (Passo a passo 1-6) */
+
 .section-como-funciona {
   padding: 60px 0;
   background-color: var(--bg-light);
@@ -1928,6 +2039,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Fontes de Captação */
+
 .section-fontes-captacao {
   padding: 60px 0;
   background-color: #fff;
@@ -1971,6 +2083,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Principais Leis de Incentivo (Bloco Navy) */
+
 .section-leis-incentivo {
   background-color: var(--navy-main);
   color: #fff;
@@ -2059,6 +2172,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Seu Apoio Transforma */
+
 .section-seu-apoio {
   padding: 30px 0 60px;
 }
@@ -2121,22 +2235,15 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Responsividade Captação */
-@media (max-width: 1100px) {
-  .porque-grid, .fontes-grid { grid-template-columns: repeat(3, 1fr); }
-  .captacao-steps-flex { flex-wrap: wrap; justify-content: center; gap: 20px; }
-  .step-arrow-line { display: none; }
-  .leis-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 768px) {
-  .captacao-hero-grid { grid-template-columns: 1fr; }
-  .porque-grid, .fontes-grid { grid-template-columns: repeat(2, 1fr); }
-  .seu-apoio-box { flex-direction: column; text-align: center; }
-  .seu-apoio-left { flex-direction: column; }
-}
 
 @media (max-width: 480px) {
-  .porque-grid, .fontes-grid { grid-template-columns: 1fr; }
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .porque-grid, .fontes-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ==========================================================================
@@ -2144,6 +2251,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
    ========================================================================== */
 
 /* Hero Editais */
+
 .editais-hero {
   background: linear-gradient(110deg, #001124 0%, #001935 60%, #002b52 100%);
   color: #fff;
@@ -2163,6 +2271,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Seção Principal (2 Colunas) */
+
 .section-editais-noticias {
   padding: 50px 0;
   background-color: #fff;
@@ -2189,9 +2298,9 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 .link-see-all {
-  font-size: 11px;
-  font-weight: 700;
   color: var(--green-main);
+  font-weight: 700;
+  font-size: 11px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -2199,6 +2308,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Coluna de Editais */
+
 .editais-list {
   display: flex;
   flex-direction: column;
@@ -2277,6 +2387,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Coluna de Notícias */
+
 .noticias-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2332,6 +2443,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Faixa de Parceiros com Setas */
+
 .partners-carousel-wrapper {
   display: flex;
   align-items: center;
@@ -2354,21 +2466,13 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Responsividade de Editais */
-@media (max-width: 1100px) {
-  .grid-editais-noticias { grid-template-columns: 1fr; }
-  .noticias-grid { grid-template-columns: repeat(2, 1fr); }
-}
 
-@media (max-width: 600px) {
-  .noticias-grid { grid-template-columns: 1fr; }
-  .edital-card { flex-wrap: wrap; text-align: left; }
-  .edital-deadline { text-align: left; }
-}
 /* ==========================================================================
    ESTILOS EXCLUSIVOS DA TELA CIRCO PITITICO / DOUTORES PITITICOS
    ========================================================================== */
 
 /* Hero Amarelo do Circo */
+
 .circo-hero {
   background-color: #ffd600;
   padding: 50px 0 60px;
@@ -2430,7 +2534,9 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   margin-bottom: 16px;
 }
 
-.purple-text { color: #6b21a8; }
+.purple-text {
+  color: #6b21a8;
+}
 
 .circo-hero-left p {
   font-size: 14px;
@@ -2491,6 +2597,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Faixa de Pilares */
+
 .section-pilares {
   background: #fff;
   padding: 30px 0;
@@ -2522,12 +2629,35 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   font-size: 18px;
 }
 
-.pilar-icon.purple { background: #f3e8ff; color: #6b21a8; }
-.pilar-icon.pink { background: #fce7f3; color: #db2777; }
-.pilar-icon.blue { background: #e0f2fe; color: #0284c7; }
-.pilar-icon.green { background: #dcfce7; color: #15803d; }
-.pilar-icon.yellow { background: #fef3c7; color: #d97706; }
-.pilar-icon.purple-light { background: #fae8ff; color: #a855f7; }
+.pilar-icon.purple {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
+
+.pilar-icon.pink {
+  background: #fce7f3;
+  color: #db2777;
+}
+
+.pilar-icon.blue {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.pilar-icon.green {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.pilar-icon.yellow {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.pilar-icon.purple-light {
+  background: #fae8ff;
+  color: #a855f7;
+}
 
 .pilar-card h3 {
   font-size: 12px;
@@ -2543,6 +2673,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Seção Resultados + Como Atuamos */
+
 .section-resultados-atuacao {
   padding: 50px 0;
   background-color: #fff;
@@ -2575,8 +2706,13 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   margin-bottom: 6px;
 }
 
-.stat-mini-icon.purple { color: #6b21a8; }
-.stat-mini-icon.green { color: #15803d; }
+.stat-mini-icon.purple {
+  color: #6b21a8;
+}
+
+.stat-mini-icon.green {
+  color: #15803d;
+}
 
 .stat-mini-card strong {
   display: block;
@@ -2593,6 +2729,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Card Roxo Citação */
+
 .quote-purple-card {
   background: #5b21b6;
   color: #fff;
@@ -2642,6 +2779,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Atuação List */
+
 .atuacao-list {
   display: flex;
   flex-direction: column;
@@ -2670,10 +2808,21 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   flex-shrink: 0;
 }
 
-.atuacao-icon.red { background: #ef4444; }
-.atuacao-icon.yellow { background: #f59e0b; }
-.atuacao-icon.green { background: #10b981; }
-.atuacao-icon.purple { background: #6b21a8; }
+.atuacao-icon.red {
+  background: #ef4444;
+}
+
+.atuacao-icon.yellow {
+  background: #f59e0b;
+}
+
+.atuacao-icon.green {
+  background: #10b981;
+}
+
+.atuacao-icon.purple {
+  background: #6b21a8;
+}
 
 .atuacao-text {
   flex: 1;
@@ -2698,6 +2847,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Como Ajudar e Hospital Parceiro */
+
 .section-ajudar-parceiro {
   padding: 50px 0;
   background-color: var(--bg-light);
@@ -2726,10 +2876,18 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   text-align: center;
 }
 
-.ajudar-card i { font-size: 22px; margin-bottom: 8px; }
-.pink-text { color: #db2777; }
-.yellow-text { color: #d97706; }
-.green-text { color: #16a34a; }
+.ajudar-card i {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.pink-text {
+  color: #db2777;
+}
+
+.yellow-text {
+  color: #d97706;
+}
 
 .ajudar-card h4 {
   font-size: 12px;
@@ -2758,9 +2916,12 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   font-size: 12px;
 }
 
-.btn-block-large { width: 100%; }
+.btn-block-large {
+  width: 100%;
+}
 
 /* Hospital Box */
+
 .hospital-card-box {
   background: #fff;
   border: 1px solid #e2e8f0;
@@ -2835,6 +2996,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Parceiros que Acreditam */
+
 .section-parceiros-causa {
   padding: 40px 0;
   background: #fff;
@@ -2888,24 +3050,13 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Responsividade Circo */
-@media (max-width: 1100px) {
-  .pilares-grid { grid-template-columns: repeat(3, 1fr); }
-  .stats-cards-grid { grid-template-columns: repeat(3, 1fr); }
-  .hospital-card-box { grid-template-columns: 1fr; }
-}
 
-@media (max-width: 768px) {
-  .circo-hero-grid { grid-template-columns: 1fr; }
-  .pilares-grid { grid-template-columns: repeat(2, 1fr); }
-  .stats-cards-grid { grid-template-columns: repeat(2, 1fr); }
-  .quote-purple-card { flex-direction: column; text-align: center; }
-  .ajudar-cards-grid { grid-template-columns: 1fr; }
-}
 /* ==========================================================================
    ESTILOS EXCLUSIVOS DA TELA ASSOCIAÇÃO ESTRELA DO ORIENTE
    ========================================================================== */
 
 /* Hero Estrela do Oriente */
+
 .estrela-hero {
   background: #fefce8;
   padding: 40px 0 60px;
@@ -2959,7 +3110,9 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   margin-bottom: 14px;
 }
 
-.green-text { color: #15803d; }
+.green-text {
+  color: #15803d;
+}
 
 .estrela-hero-card p {
   font-size: 13px;
@@ -2989,7 +3142,10 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   color: #fff;
 }
 
-.gold-icon { color: #eab308; font-size: 20px; }
+.gold-icon {
+  color: #eab308;
+  font-size: 20px;
+}
 
 .selo-ponto-cultura-alt strong, .selo-ponto-oficial strong {
   display: block;
@@ -2997,8 +3153,15 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   line-height: 1.2;
 }
 
-.selo-ponto-cultura-alt small { font-size: 8px; color: var(--text-muted); }
-.selo-ponto-oficial small { font-size: 8px; color: #cbd5e1; }
+.selo-ponto-cultura-alt small {
+  font-size: 8px;
+  color: var(--text-muted);
+}
+
+.selo-ponto-oficial small {
+  font-size: 8px;
+  color: #cbd5e1;
+}
 
 .estrela-hero-bg-image img {
   width: 100%;
@@ -3008,6 +3171,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Quem Somos */
+
 .section-quem-somos-estrela {
   padding: 60px 0;
   background: #fff;
@@ -3049,6 +3213,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Navy Stats Box */
+
 .quem-somos-stats-navy {
   background: var(--navy-main);
   color: #fff;
@@ -3079,6 +3244,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Projetos Estrela */
+
 .section-projetos-estrela {
   padding: 60px 0;
   background: var(--bg-light);
@@ -3137,7 +3303,9 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   border: 3px solid #fff;
 }
 
-.card-icon-floating.green { background: #15803d; }
+.card-icon-floating.green {
+  background: #15803d;
+}
 
 .card-estrela-body {
   padding: 24px 12px 16px;
@@ -3174,6 +3342,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Trio de Banners */
+
 .section-trio-banners {
   padding: 40px 0 60px;
   background: #fff;
@@ -3254,6 +3423,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Footer Selo */
+
 .footer-selo-col {
   text-align: center;
 }
@@ -3272,28 +3442,30 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.ponto-cultura-stamp i { font-size: 20px; color: #eab308; margin-bottom: 2px; }
-.ponto-cultura-stamp span { font-size: 8px; font-weight: 900; }
-.ponto-cultura-stamp small { font-size: 6px; color: var(--text-muted); }
+.ponto-cultura-stamp i {
+  font-size: 20px;
+  color: #eab308;
+  margin-bottom: 2px;
+}
+
+.ponto-cultura-stamp span {
+  font-size: 8px;
+  font-weight: 900;
+}
+
+.ponto-cultura-stamp small {
+  font-size: 6px;
+  color: var(--text-muted);
+}
 
 /* Responsividade Estrela */
-@media (max-width: 1100px) {
-  .estrela-hero-container { grid-template-columns: 1fr; }
-  .quem-somos-grid { grid-template-columns: 1fr; }
-  .cards-grid-5 { grid-template-columns: repeat(3, 1fr); }
-  .trio-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 600px) {
-  .cards-grid-5 { grid-template-columns: 1fr; }
-  .estrela-selos-row { flex-direction: column; }
-}
 
 /* ==========================================================================
    ESTILOS FIÉIS À NOVA ARTE DO CIRCO PITITICO
    ========================================================================== */
 
 /* Hero Banner */
+
 .circo-banner-hero {
   background-color: #FFCC00;
   padding: 0;
@@ -3312,6 +3484,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Faixa de 5 Pilares */
+
 .section-pilares-new {
   padding: 25px 0;
   background-color: #fff;
@@ -3341,10 +3514,25 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   font-size: 16px;
 }
 
-.pilar-icon-yellow { background: #fef3c7; color: #d97706; }
-.pilar-icon-red { background: #fee2e2; color: #EE222A; }
-.pilar-icon-blue { background: #e0f2fe; color: #0447A8; }
-.pilar-icon-purple { background: #f3e8ff; color: #A53692; }
+.pilar-icon-yellow {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.pilar-icon-red {
+  background: #fee2e2;
+  color: #EE222A;
+}
+
+.pilar-icon-blue {
+  background: #e0f2fe;
+  color: #0447A8;
+}
+
+.pilar-icon-purple {
+  background: #f3e8ff;
+  color: #A53692;
+}
 
 .pilar-card-new h3 {
   font-size: 12px;
@@ -3360,6 +3548,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Categorias de Atividades com Galeria */
+
 .section-atividades-circo {
   padding: 40px 0 50px;
   background: #fff;
@@ -3417,6 +3606,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Seção Impacto em Números (Card Azul + Foto) */
+
 .section-impacto-numeros {
   padding: 40px 0;
   background: #fff;
@@ -3493,6 +3683,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Banner Promocional Inferior da Nova Arte */
+
 .section-banner-promocional {
   padding: 30px 0 60px;
   background: #fff;
@@ -3577,22 +3768,9 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Responsividade da Nova Arte */
-@media (max-width: 1100px) {
-  .pilares-grid-5 { grid-template-columns: repeat(3, 1fr); }
-  .atividades-gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  .impacto-box-grid { grid-template-columns: 1fr; }
-  .promo-banner-box { grid-template-columns: 1fr; text-align: center; }
-  .promo-quote-area { border-left: none; text-align: center; border-top: 1px solid #e2e8f0; padding-top: 10px; }
-  .promo-buttons-area { justify-content: center; }
-}
-
-@media (max-width: 600px) {
-  .pilares-grid-5 { grid-template-columns: 1fr; }
-  .atividades-gallery-grid { grid-template-columns: 1fr; }
-  .impacto-stats-grid { grid-template-columns: repeat(2, 1fr); }
-}
 
 /* --- SEÇÃO ECOSSISTEMAS DE IMPACTO --- */
+
 .ecosystem-section {
   padding: 60px 0;
   background-color: #ffffff;
@@ -3618,18 +3796,6 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   gap: 16px;
 }
 
-.eco-card {
-  border-radius: 10px;
-  padding: 30px 18px 24px;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  min-height: 380px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
 .eco-brand {
   margin-bottom: 15px;
 }
@@ -3645,13 +3811,6 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   font-size: 20px;
   color: #facc15;
   margin-bottom: 8px;
-}
-
-.eco-brand h3 {
-  font-size: 15px;
-  font-weight: 800;
-  line-height: 1.25;
-  letter-spacing: 0.5px;
 }
 
 .eco-brand span {
@@ -3677,43 +3836,74 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   margin-bottom: 20px;
 }
 
-.btn-eco-outline {
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  color: #ffffff;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-size: 10px;
-  font-weight: 700;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  transition: all 0.2s;
-}
-
-.btn-eco-outline:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: #ffffff;
-}
-
 /* Cores específicas dos cards */
-.eco-lazarus { background: linear-gradient(180deg, #001f3f 0%, #001026 100%); }
-.eco-estrela { background: linear-gradient(180deg, #c58b1b 0%, #99650c 100%); }
-.eco-circo { background: linear-gradient(180deg, #c8322b 0%, #9e1f18 100%); }
-.eco-doutores { background: linear-gradient(180deg, #3d3b76 0%, #282654 100%); }
-.eco-portfolio { background: linear-gradient(180deg, #1b6b38 0%, #104a25 100%); }
 
 /* Responsividade */
-@media (max-width: 1100px) {
-  .ecosystem-grid { grid-template-columns: repeat(3, 1fr); }
-}
 
 @media (max-width: 768px) {
-  .ecosystem-grid { grid-template-columns: 1fr; }
+  .servicos-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .servicos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-dark-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .cta-dark-left {
+    flex-direction: column;
+  }
+
+  .captacao-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .porque-grid, .fontes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .seu-apoio-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seu-apoio-left {
+    flex-direction: column;
+  }
+
+  .circo-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pilares-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quote-purple-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ajudar-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* --- BARRA AZUL DE RESULTADOS --- */
+
 .section-resultados-bar {
   background-color: #001935;
   color: #ffffff;
@@ -3771,6 +3961,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* --- COMO PODEMOS AJUDAR --- */
+
 .section-como-ajudar {
   padding: 60px 0;
   background-color: #ffffff;
@@ -3814,6 +4005,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* --- PROJETOS EM CAPTAÇÃO --- */
+
 .section-captacao-home {
   padding: 60px 0;
   background-color: #f8fafc;
@@ -3923,22 +4115,219 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Responsividade */
+
 @media (max-width: 1100px) {
-  .resultados-bar-container { flex-direction: column; text-align: center; }
-  .resultados-grid-items { flex-wrap: wrap; justify-content: center; }
-  .ajudar-grid-5 { grid-template-columns: repeat(3, 1fr); }
-  .captacao-home-grid { grid-template-columns: 1fr; }
-  .captacao-home-cards { grid-template-columns: repeat(2, 1fr); }
+  .servicos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .flow-steps-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .flow-connector {
+    display: none;
+  }
+
+  .stats-floating-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .segmentos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .outros-projetos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projetos-mini-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .porque-grid, .fontes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .captacao-steps-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .step-arrow-line {
+    display: none;
+  }
+
+  .leis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-editais-noticias {
+    grid-template-columns: 1fr;
+  }
+
+  .noticias-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pilares-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stats-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hospital-card-box {
+    grid-template-columns: 1fr;
+  }
+
+  .estrela-hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .quem-somos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pilares-grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .atividades-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impacto-box-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-banner-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .promo-quote-area {
+    border-left: none;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 10px;
+  }
+
+  .promo-buttons-area {
+    justify-content: center;
+  }
+
+  .ecosystem-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .resultados-bar-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resultados-grid-items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ajudar-grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .captacao-home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .captacao-home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
-  .ajudar-grid-5 { grid-template-columns: 1fr; }
-  .captacao-home-cards { grid-template-columns: 1fr; }
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projetos-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-floating-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projetos-mini-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .noticias-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edital-card {
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .edital-deadline {
+    text-align: left;
+  }
+
+  .cards-grid-5 {
+    grid-template-columns: 1fr;
+  }
+
+  .estrela-selos-row {
+    flex-direction: column;
+  }
+
+  .pilares-grid-5 {
+    grid-template-columns: 1fr;
+  }
+
+  .atividades-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impacto-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ajudar-grid-5 {
+    grid-template-columns: 1fr;
+  }
+
+  .captacao-home-cards {
+    grid-template-columns: 1fr;
+  }
 }
+
 /* --- ESTILIZAGEM UNIFICADA DOS CARDS DO ECOSSISTEMA --- */
+
 .eco-card {
   border-radius: 12px;
-  overflow: hidden;
   padding: 0 !important;
   color: #ffffff;
   display: flex;
@@ -3947,10 +4336,12 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   text-align: center;
   min-height: 420px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
   position: relative;
 }
 
 /* Área superior da imagem em cada card */
+
 .eco-card-header-img {
   height: 150px;
   width: 100%;
@@ -3961,6 +4352,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Selo Circular da Estrela do Oriente */
+
 .eco-badge-circle {
   width: 54px;
   height: 54px;
@@ -3976,18 +4368,15 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   z-index: 5;
-}
-
-.eco-badge-circle {
   color: #ffffff;
   font-size: 24px;
   margin: 0;
   background-size: cover;
-  background-position: center;  
- 
+  background-position: center;
 }
 
 /* Conteúdo interno dos cards */
+
 .eco-card-content {
   padding: 35px 18px 24px;
   display: flex;
@@ -3997,6 +4386,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Layout do card da Lazarus sem foto */
+
 .eco-lazarus .eco-card-content {
   padding-top: 30px;
 }
@@ -4005,6 +4395,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   font-size: 14px;
   font-weight: 800;
   line-height: 1.25;
+  letter-spacing: 0.5px;
   color: #ffffff;
 }
 
@@ -4024,6 +4415,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Botões na parte inferior */
+
 .btn-eco-outline {
   border: 1px solid rgba(255, 255, 255, 0.6);
   color: #ffffff;
@@ -4046,186 +4438,23 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
 }
 
 /* Cores de Fundo dos Cards */
-.eco-lazarus { background: #001026; }
-.eco-estrela { background: #c58b1b; }
-.eco-circo { background: #c8322b; }
-.eco-doutores { background: #282654; }
-.eco-portfolio { background: #104a25; }
 
-/* ==========================================================================
-   ESTILOS DA SEÇÃO INCENTIVO FISCAL & DOAÇÕES
-   ========================================================================== */
-.section-incentivos {
-  background-color: var(--bg-light);
-  padding: 60px 0;
-  border-top: 1px solid var(--border-color);
+.eco-lazarus {
+  background: #001026;
 }
 
-.incentivos-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 40px;
+.eco-estrela {
+  background: #c58b1b;
 }
 
-.incentivo-card {
-  background: var(--white);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-  display: flex;
-  flex-direction: column;
+.eco-circo {
+  background: #c8322b;
 }
 
-.inc-header {
-  background: var(--navy-main);
-  color: var(--white);
-  padding: 20px;
-  text-align: center;
+.eco-doutores {
+  background: #282654;
 }
 
-.inc-header.alt-color {
-  background: #15803d; /* Verde de destaque para o ICMS */
-}
-
-.inc-tag {
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: var(--green-light);
-  background: rgba(255, 255, 255, 0.1);
-  padding: 3px 8px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-bottom: 8px;
-}
-
-.inc-header h3 {
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 1.3;
-}
-
-.inc-body {
-  padding: 24px;
-  font-size: 12px;
-  color: var(--text-dark);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  flex: 1;
-}
-
-.inc-body h4 {
-  font-size: 13px;
-  color: var(--navy-main);
-  font-weight: 800;
-}
-
-.inc-body p {
-  color: var(--text-muted);
-  line-height: 1.5;
-}
-
-.inc-highlight {
-  background: #f1f5f9;
-  border-left: 4px solid var(--green-main);
-  padding: 10px 14px;
-  border-radius: 0 6px 6px 0;
-}
-
-.inc-highlight strong {
-  display: block;
-  font-size: 11px;
-  color: var(--navy-main);
-}
-
-.inc-highlight span {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--green-main);
-}
-
-.inc-example {
-  background: #fefce8;
-  border: 1px solid #fef08a;
-  border-radius: 6px;
-  padding: 12px;
-}
-
-.inc-example p {
-  color: #854d0e;
-  margin: 0;
-}
-
-.inc-vantagens ul {
-  list-style: none;
-  margin-top: 6px;
-}
-
-.inc-vantagens li {
-  font-size: 11px;
-  color: var(--text-dark);
-  margin-bottom: 4px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.inc-vantagens li i {
-  color: var(--green-main);
-  font-size: 10px;
-}
-
-.incentivo-external-link {
-  margin-top: 40px;
-}
-
-.btn-outline-navy {
-  border: 1px solid var(--navy-main);
-  color: var(--navy-main);
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 700;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.2s;
-}
-
-.btn-outline-navy:hover {
-  background: var(--navy-main);
-  color: var(--white);
-}
-
-/* Responsividade */
-@media (max-width: 900px) {
-  .incentivos-grid {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 600px) {
-  img, div, iframe, section {
-    max-width: 100% !important;
-  }
-
-  .container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-
-  /* Ajuste do menu no mobile */
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-  }
+.eco-portfolio {
+  background: #104a25;
 }
