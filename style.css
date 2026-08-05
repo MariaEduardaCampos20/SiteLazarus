@@ -48,24 +48,26 @@ body {
   height: 70px;
 }
 
-.logo {
+/* --- ALINHAMENTO E TAMANHO DA LOGO NO HEADER --- */
+.logo{
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
-  color: var(--white);
+  height: 100%;
 }
 
-.logo-symbol {
-  color: #ffffff;
-  font-size: 24px;
+.logo img {
+  max-height: 150px; /* Ajuste a altura máxima conforme o gosto (ex: 40px a 52px) */
+  max-height: 150px; /* Ajuste a altura máxima conforme o gosto (ex: 40px a 52px) */
+  width: auto;      /* Mantém a proporção correta da imagem */
+  object-fit: contain;
+  display: block;
+  transition: transform 0.2s ease;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
+.logo img:hover {
+  transform: scale(1.03); /* Efeito suave ao passar o mouse */
 }
-
 .brand-name {
   font-weight: 800;
   font-size: 18px;
@@ -144,7 +146,7 @@ body {
 .hero-content h1 {
   font-size: 40px;
   line-height: 1.2;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 16px;
 }
 
@@ -3587,3 +3589,618 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text-dark); 
   .impacto-stats-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* --- SEÇÃO ECOSSISTEMAS DE IMPACTO --- */
+.ecosystem-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.star-icon-small {
+  color: #388e3c;
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.section-title-center p {
+  color: #64748b;
+  font-size: 13px;
+  max-width: 750px;
+  margin: 8px auto 35px;
+}
+
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.eco-card {
+  border-radius: 10px;
+  padding: 30px 18px 24px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  min-height: 380px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.eco-brand {
+  margin-bottom: 15px;
+}
+
+.eco-img {
+  font-size: 32px;
+  margin-bottom: 6px;
+  max-width: 200px;
+  height: auto;
+}
+
+.eco-star-icon {
+  font-size: 20px;
+  color: #facc15;
+  margin-bottom: 8px;
+}
+
+.eco-brand h3 {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+}
+
+.eco-brand span {
+  font-size: 9px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  display: block;
+  margin-top: 4px;
+}
+
+.badge-ponto {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.eco-card p {
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.btn-eco-outline {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.btn-eco-outline:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ffffff;
+}
+
+/* Cores específicas dos cards */
+.eco-lazarus { background: linear-gradient(180deg, #001f3f 0%, #001026 100%); }
+.eco-estrela { background: linear-gradient(180deg, #c58b1b 0%, #99650c 100%); }
+.eco-circo { background: linear-gradient(180deg, #c8322b 0%, #9e1f18 100%); }
+.eco-doutores { background: linear-gradient(180deg, #3d3b76 0%, #282654 100%); }
+.eco-portfolio { background: linear-gradient(180deg, #1b6b38 0%, #104a25 100%); }
+
+/* Responsividade */
+@media (max-width: 1100px) {
+  .ecosystem-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .ecosystem-grid { grid-template-columns: 1fr; }
+}
+
+/* --- BARRA AZUL DE RESULTADOS --- */
+.section-resultados-bar {
+  background-color: #001935;
+  color: #ffffff;
+  padding: 25px 0;
+}
+
+.resultados-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.resultados-title-box h3 {
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.resultados-title-box span {
+  font-size: 12px;
+  color: #4ade80;
+  font-weight: 700;
+  display: block;
+}
+
+.resultados-grid-items {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.res-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.res-item i {
+  font-size: 22px;
+  color: #4ade80;
+}
+
+.res-item strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.res-item small {
+  font-size: 9px;
+  color: #cbd5e1;
+  font-weight: 700;
+}
+
+/* --- COMO PODEMOS AJUDAR --- */
+.section-como-ajudar {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.ajudar-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.ajudar-item {
+  text-align: center;
+}
+
+.ajudar-icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #388e3c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  font-size: 20px;
+  color: #388e3c;
+}
+
+.ajudar-item h4 {
+  font-size: 12px;
+  font-weight: 800;
+  color: #001935;
+  margin-bottom: 6px;
+}
+
+.ajudar-item p {
+  font-size: 11px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* --- PROJETOS EM CAPTAÇÃO --- */
+.section-captacao-home {
+  padding: 60px 0;
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.captacao-home-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.captacao-home-left h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #001935;
+  line-height: 1.2;
+}
+
+.captacao-home-left p {
+  font-size: 13px;
+  color: #64748b;
+  margin: 12px 0 20px;
+}
+
+.captacao-home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card-captacao {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-captacao-img {
+  height: 130px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 8px;
+}
+
+.tag-captacao {
+  background: #15803d;
+  color: #ffffff;
+  font-size: 8px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.card-captacao-body {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.card-captacao-body h4 {
+  font-size: 13px;
+  font-weight: 800;
+  color: #001935;
+  margin-bottom: 4px;
+}
+
+.card-captacao-body p {
+  font-size: 10px;
+  color: #64748b;
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.btn-card-action {
+  background: #e8f5e9;
+  color: #15803d;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 6px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+}
+
+.btn-card-action-outline {
+  background: #f1f5f9;
+  color: #001935;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 6px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+}
+
+/* Responsividade */
+@media (max-width: 1100px) {
+  .resultados-bar-container { flex-direction: column; text-align: center; }
+  .resultados-grid-items { flex-wrap: wrap; justify-content: center; }
+  .ajudar-grid-5 { grid-template-columns: repeat(3, 1fr); }
+  .captacao-home-grid { grid-template-columns: 1fr; }
+  .captacao-home-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .ajudar-grid-5 { grid-template-columns: 1fr; }
+  .captacao-home-cards { grid-template-columns: 1fr; }
+}
+/* --- ESTILIZAGEM UNIFICADA DOS CARDS DO ECOSSISTEMA --- */
+.eco-card {
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0 !important;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  min-height: 420px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* Área superior da imagem em cada card */
+.eco-card-header-img {
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Selo Circular da Estrela do Oriente */
+.eco-badge-circle {
+  width: 54px;
+  height: 54px;
+  background-color: #c58b1b;
+  border: 3px solid #facc15;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 5;
+}
+
+.eco-badge-circle {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
+  background-size: cover;
+  background-position: center;  
+ 
+}
+
+/* Conteúdo interno dos cards */
+.eco-card-content {
+  padding: 35px 18px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/* Layout do card da Lazarus sem foto */
+.eco-lazarus .eco-card-content {
+  padding-top: 30px;
+}
+
+.eco-brand h3 {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.eco-brand span, .badge-ponto {
+  font-size: 9px;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+  display: block;
+  margin-top: 4px;
+}
+
+.eco-card-content p {
+  font-size: 11px;
+  line-height: 1.45;
+  margin: 14px 0 20px;
+  opacity: 0.95;
+}
+
+/* Botões na parte inferior */
+.btn-eco-outline {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s;
+  margin-top: auto;
+}
+
+.btn-eco-outline:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ffffff;
+}
+
+/* Cores de Fundo dos Cards */
+.eco-lazarus { background: #001026; }
+.eco-estrela { background: #c58b1b; }
+.eco-circo { background: #c8322b; }
+.eco-doutores { background: #282654; }
+.eco-portfolio { background: #104a25; }
+
+/* ==========================================================================
+   ESTILOS DA SEÇÃO INCENTIVO FISCAL & DOAÇÕES
+   ========================================================================== */
+.section-incentivos {
+  background-color: var(--bg-light);
+  padding: 60px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.incentivos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.incentivo-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.inc-header {
+  background: var(--navy-main);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+}
+
+.inc-header.alt-color {
+  background: #15803d; /* Verde de destaque para o ICMS */
+}
+
+.inc-tag {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--green-light);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.inc-header h3 {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.inc-body {
+  padding: 24px;
+  font-size: 12px;
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.inc-body h4 {
+  font-size: 13px;
+  color: var(--navy-main);
+  font-weight: 800;
+}
+
+.inc-body p {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.inc-highlight {
+  background: #f1f5f9;
+  border-left: 4px solid var(--green-main);
+  padding: 10px 14px;
+  border-radius: 0 6px 6px 0;
+}
+
+.inc-highlight strong {
+  display: block;
+  font-size: 11px;
+  color: var(--navy-main);
+}
+
+.inc-highlight span {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--green-main);
+}
+
+.inc-example {
+  background: #fefce8;
+  border: 1px solid #fef08a;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.inc-example p {
+  color: #854d0e;
+  margin: 0;
+}
+
+.inc-vantagens ul {
+  list-style: none;
+  margin-top: 6px;
+}
+
+.inc-vantagens li {
+  font-size: 11px;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.inc-vantagens li i {
+  color: var(--green-main);
+  font-size: 10px;
+}
+
+.incentivo-external-link {
+  margin-top: 40px;
+}
+
+.btn-outline-navy {
+  border: 1px solid var(--navy-main);
+  color: var(--navy-main);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.btn-outline-navy:hover {
+  background: var(--navy-main);
+  color: var(--white);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .incentivos-grid {
+    grid-template-columns: 1fr;
+  }
+}

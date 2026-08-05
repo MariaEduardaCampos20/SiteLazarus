@@ -4,38 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lazarus - Assessoria & Projetos</title>
-  <!-- Ícones FontAwesome para os elementos visuais -->
+  <!-- Ícones FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-<!--  <script src="https://cdn.userway.org/widget.js" data-account="ZozPh77E3y"></script> -->
 </head>
 <body>
 
-  <!-- HEADER & NAVIGATION -->
+  <!-- HEADER & NAVEGAÇÃO -->
   <header class="header">
     <div class="container header-container">
-      <a href="#" class="logo">
-        <div class="logo-symbol">▲</div>
-        <div class="logo-text">
-          <span class="brand-name">LAZARUS</span>
-          <span class="brand-sub">ASSESSORIA & PROJETOS</span>
-        </div>
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Lazarus Assessoria & Projetos" >
       </a>
 
       <nav class="navbar">
         <ul class="nav-links">
-          <li><a href="#" class="active">INÍCIO</a></li>
+          <li><a href="index.html" class="active">INÍCIO</a></li>
           <li><a href="sobre.html">A LAZARUS</a></li>
           <li><a href="servicos.html">SERVIÇOS</a></li>
           <li><a href="projetos.html">PROJETOS</a></li>
           <li><a href="captacao.html">CAPTAÇÃO</a></li>
           <li><a href="editais.html">EDITAIS</a></li>
           <li><a href="#">ÁREA DO CLIENTE</a></li>
-          <li><a href="contato.html ">CONTATO</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
         </ul>
       </nav>
 
-      <a href="#" class="btn btn-header">
+      <a href="contato.html" class="btn btn-header">
         <i class="fa-regular fa-heart"></i> QUERO APOIAR
       </a>
     </div>
@@ -65,153 +60,343 @@
     </div>
   </section>
 
-  <!-- STATS COUNTER BAR -->
-  <section class="stats-section">
-    <div class="container stats-grid">
-      <div class="stat-card">
-        <i class="fa-regular fa-folder"></i>
-        <div class="stat-number">+150</div>
-        <div class="stat-label">Projetos Elaborados</div>
-      </div>
-      <div class="stat-card">
-        <i class="fa-solid fa-award"></i>
-        <div class="stat-number">+120</div>
-        <div class="stat-label">Projetos Aprovados</div>
-      </div>
-      <div class="stat-card">
-        <i class="fa-solid fa-hand-holding-dollar"></i>
-        <div class="stat-number">R$ 25 mi+</div>
-        <div class="stat-label">Captados em Recursos</div>
-      </div>
-      <div class="stat-card">
-        <i class="fa-solid fa-location-dot"></i>
-        <div class="stat-number">100+</div>
-        <div class="stat-label">Municípios Atendidos</div>
-      </div>
-      <div class="stat-card">
-        <i class="fa-solid fa-handshake"></i>
-        <div class="stat-number">80+</div>
-        <div class="stat-label">Empresas Parceiras</div>
-      </div>
-      <div class="stat-card">
-        <i class="fa-solid fa-users"></i>
-        <div class="stat-number">200 mil+</div>
-        <div class="stat-label">Pessoas Beneficiadas</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJETOS EM DESTAQUE -->
-  <section class="section featured-projects" id="projetos">
+  <!-- NOSSOS ECOSSISTEMAS DE IMPACTO -->
+  <section class="section ecosystem-section" id="ecossistemas">
     <div class="container">
-      <div class="section-header">
-        <h2>PROJETOS EM DESTAQUE</h2>
-        <a href="#" class="link-see-all">VER TODOS OS PROJETOS <i class="fa-solid fa-arrow-right"></i></a>
+      <div class="section-title-center">
+        <i class="fa-solid fa-star star-icon-small"></i>
+        <h2>NOSSO ECOSSISTEMA DE IMPACTO</h2>
+        <p>Iniciativas que transformam vidas, fortalecem a cultura e geram impacto social por meio da arte, da educação e da gestão de projetos.</p>
       </div>
 
-      <div class="cards-grid">
-        <!-- Card 1 -->
-        <div class="project-card">
-          <div class="card-img" style="background-image: url(doutores.jpg);"></div>
-          <div class="card-body">
-            <h3>Doutores Pititicos</h3>
-            <p>Palhaçaria hospitalar que leva alegria e esperança.</p>
-            <span class="badge badge-green">EM EXECUÇÃO</span>
+      <div class="ecosystem-grid">
+        <!-- Card 1: LAZARUS -->
+        <div class="eco-card eco-lazarus">
+          <div class="eco-card-header-img" style="background-image: url('logo.png');"></div>
+            <div class="eco-card-content">
+              <div class="eco-brand">
+                <h3>LAZARUS</h3>
+                <span>ASSESSORIA & PROJETOS</span>
+              </div>
+              <p>Especialistas em elaboração, gestão e captação de recursos para projetos culturais, sociais e esportivos.</p>
+              <a href="sobre.html" class="btn-eco-outline">CONHECER MAIS <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+       <!-- Card 2: ESTRELA DO ORIENTE -->
+<div class="eco-card eco-estrela">
+  <div class="eco-card-header-img" style="background-image: url('associacao.jpeg');">
+    <div class="eco-badge-circle" style="background-image: url(pontoDeC.jpeg);">
+    </div>
+  </div>
+  
+  <div class="eco-card-content">
+    <div class="eco-brand">
+      <h3>ASSOCIAÇÃO<br>ESTRELA DO ORIENTE</h3>
+      <span class="badge-ponto">Ponto de Cultura</span>
+    </div>
+    <p>Mais de 20 anos preservando tradições, fortalecendo a cultura popular e promovendo a cidadania.</p>
+    <a href="associacao.html" class="btn-eco-outline">CONHECER MAIS <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</div>
+
+       <!-- Card 3: CIRCO PITITICO -->
+  <div class="eco-card eco-circo">
+    <div class="eco-card-header-img" style="background-image: url('logocirculo.jpg');"></div>
+    <div class="eco-card-content">
+      <div class="eco-brand">
+        <h3>CIRCO PITITICO</h3>
+      </div>
+      <p>Arte, educação e diversão por onde passamos. Espetáculos, oficinas e intervenções que encantam.</p>
+      <a href="circo.html" class="btn-eco-outline">CONHECER MAIS <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Card 4: DOUTORES PITITICOS -->
+  <div class="eco-card eco-doutores">
+    <div class="eco-card-header-img" style="background-image: url('fotocirco.jpeg');"></div>
+    <div class="eco-card-content">
+      <div class="eco-brand">
+        <h3>DOUTORES PITITICOS</h3>
+      </div>
+      <p>Palhaçaria hospitalar que leva alegria, esperança e acolhimento a pacientes, familiares e profissionais da saúde.</p>
+      <a href="circo.html#doutores" class="btn-eco-outline">CONHECER MAIS <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Card 5: PORTFÓLIO DE PROJETOS -->
+  <div class="eco-card eco-portfolio">
+    <div class="eco-card-header-img" style="background-image: url('https://picsum.photos/400/250?random=12');"></div>
+    <div class="eco-card-content">
+      <div class="eco-brand">
+        <h3>PORTFÓLIO DE PROJETOS</h3>
+      </div>
+      <p>Conheça os projetos que já realizamos e aqueles que estão em execução. Impacto que se mede em histórias.</p>
+      <a href="projetos.html" class="btn-eco-outline">VER TODOS <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARRA AZUL: NOSSOS RESULTADOS FALAM POR NÓS -->
+  <section class="section-resultados-bar">
+    <div class="container resultados-bar-container">
+      <div class="resultados-title-box">
+        <h3>NOSSOS RESULTADOS</h3>
+        <span>FALAM POR NÓS</span>
+      </div>
+
+      <div class="resultados-grid-items">
+        <div class="res-item">
+          <i class="fa-regular fa-clipboard"></i>
+          <div>
+            <strong>+320</strong>
+            <small>PROJETOS APROVADOS</small>
           </div>
         </div>
-        <!-- Card 2 -->
-        <div class="project-card">
-          <div class="card-img" style="background-image: url('logocirculo.jpg');"></div>
-          <div class="card-body">
-            <h3>Circo Pititico</h3>
-            <p>Arte, educação e diversão por onde passamos.</p>
-            <span class="badge badge-green">EM EXECUÇÃO</span>
+
+        <div class="res-item">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <div>
+            <strong>+R$ 25 MILHÕES</strong>
+            <small>CAPTADOS EM RECURSOS</small>
           </div>
         </div>
-        <!-- Card 3 -->
-        <div class="project-card">
-          <div class="card-img" style="background-image: url('https://picsum.photos/400/250?random=3');"></div>
-          <div class="card-body">
-            <h3>Uma Palavra</h3>
-            <p>Documentário sobre inclusão e empatia.</p>
-            <span class="badge badge-blue">FINALIZADO</span>
+
+        <div class="res-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>+100</strong>
+            <small>MUNICÍPIOS ATENDIDOS</small>
           </div>
         </div>
-        <!-- Card 4 -->
-        <div class="project-card">
-          <div class="card-img" style="background-image: url('https://picsum.photos/400/250?random=4');"></div>
-          <div class="card-body">
-              <h3>Festa Junina Estrela do Oriente</h3>
-              <p>Cultura, tradição e entretenimento para toda a comunidade.</p>
-                <span class="badge badge-execution">EM EXECUÇÃO</span>
-                <span class="card-date"><i class="fa-regular fa-calendar"></i> Anual</span>
-             <a href="associacao.html">Veja mais</a>
+
+        <div class="res-item">
+          <i class="fa-solid fa-handshake"></i>
+          <div>
+            <strong>+120</strong>
+            <small>EMPRESAS PARCEIRAS</small>
+          </div>
+        </div>
+
+        <div class="res-item">
+          <i class="fa-solid fa-users"></i>
+          <div>
+            <strong>+500 MIL</strong>
+            <small>PESSOAS BENEFICIADAS</small>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NOSSAS ÁREAS DE ATUAÇÃO -->
-  <section class="section bg-light">
+  <!-- COMO PODEMOS AJUDAR? (5 ÍCONES) -->
+  <section class="section-como-ajudar">
     <div class="container text-center">
-      <h2 class="section-title-center">NOSSAS ÁREAS DE ATUAÇÃO</h2>
-      <div class="areas-grid">
-        <div class="area-item">
-          <div class="icon-circle"><i class="fa-solid fa-palette"></i></div>
-          <span>Cultura</span>
-        </div>
-        <div class="area-item">
-          <div class="icon-circle"><i class="fa-solid fa-hands-holding-child"></i></div>
-          <span>Social</span>
-        </div>
-        <div class="area-item">
-          <div class="icon-circle"><i class="fa-solid fa-graduation-cap"></i></div>
-          <span>Educação</span>
-        </div>
-        <div class="area-item">
-          <div class="icon-circle"><i class="fa-solid fa-volleyball"></i></div>
-          <span>Esporte</span>
-        </div>
-        <div class="area-item">
-          <div class="icon-circle"><i class="fa-solid fa-heart-pulse"></i></div>
-          <span>Saúde</span>
-        </div>
-        <div class="area-item">
-          <div class="icon-circle"><i class="fa-solid fa-plane"></i></div>
-          <span>Turismo</span>
-        </div>
-        <div class="area-item">
-          <div class="icon-circle"><i class="fa-solid fa-leaf"></i></div>
-          <span>Meio Ambiente</span>
-        </div>
-        <div class="area-item">
-          <div class="icon-circle"><i class="fa-solid fa-people-group"></i></div>
-          <span>Terceiro Setor</span>
-        </div>
-      </div>
+      <i class="fa-solid fa-star star-icon-small"></i>
+      <h2 class="section-title-center">COMO PODEMOS AJUDAR?</h2>
 
-      <!-- MISSÃO, VISÃO, VALORES -->
-      <div class="mvv-grid">
-        <div class="mvv-card">
-          <i class="fa-solid fa-bullseye mvv-icon"></i>
-          <h4>MISSÃO</h4>
-          <p>Conectar ideias e recursos para transformar realidades e promover o bem comum.</p>
+      <div class="ajudar-grid-5">
+        <div class="ajudar-item">
+          <div class="ajudar-icon"><i class="fa-solid fa-file-signature"></i></div>
+          <h4>ELABORAÇÃO DE PROJETOS</h4>
+          <p>Transformamos ideias em projetos prontos para aprovação.</p>
         </div>
-        <div class="mvv-card">
-          <i class="fa-regular fa-eye mvv-icon"></i>
-          <h4>VISÃO</h4>
-          <p>Ser referência nacional em gestão de projetos com impacto social, cultural e sustentável.</p>
+
+        <div class="ajudar-item">
+          <div class="ajudar-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h4>CAPTAÇÃO DE RECURSOS</h4>
+          <p>Buscamos oportunidades e parcerias para financiar seu projeto.</p>
         </div>
-        <div class="mvv-card">
-          <i class="fa-solid fa-gem mvv-icon"></i>
-          <h4>VALORES</h4>
-          <p>Ética, transparência, compromisso, responsabilidade, inovação e respeito às pessoas.</p>
+
+        <div class="ajudar-item">
+          <div class="ajudar-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h4>GESTÃO DE PROJETOS</h4>
+          <p>Planejamento, execução e acompanhamento com transparência e eficiência.</p>
         </div>
+
+        <div class="ajudar-item">
+          <div class="ajudar-icon"><i class="fa-solid fa-file-invoice"></i></div>
+          <h4>PRESTAÇÃO DE CONTAS</h4>
+          <p>Organização e entrega de relatórios com segurança e dentro dos prazos exigidos.</p>
+        </div>
+
+        <div class="ajudar-item">
+          <div class="ajudar-icon"><i class="fa-solid fa-masks-theater"></i></div>
+            <h4>PRODUÇÃO CULTURAL</h4>
+          <p>Produção de espetáculos, eventos, festivais e ações culturais completas.</p>
+        </div>
+          <div class="ajudar-item">
+            <div class="ajudar-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h4>DESENVOLVIMENTO DE SITES</h4>
+            <p>Criação de sites institucionais modernos, responsivos e otimizados para fortalecer a presença digital da sua marca.</p>
+          </div>
+      
       </div>
     </div>
   </section>
 
+  <!-- PROJETOS EM CAPTAÇÃO -->
+  <section class="section-captacao-home">
+    <div class="container">
+      <div class="captacao-home-grid">
+        
+        <!-- Coluna Esquerda -->
+        <div class="captacao-home-left">
+          <h2>PROJETOS EM CAPTAÇÃO</h2>
+          <p>Apoie estas iniciativas e faça parte da transformação que promovemos.</p>
+          <a href="captacao.html" class="btn btn-green-fill">VER TODOS OS PROJETOS <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Coluna Direita: Cards de Projetos -->
+        <div class="captacao-home-cards">
+          
+          <div class="card-captacao">
+            <div class="card-captacao-img" style="background-image: url('fotocirco.jpeg');">
+              <span class="tag-captacao">EM CAPTAÇÃO</span>
+            </div>
+            <div class="card-captacao-body">
+              <h4>Doutores Pititicos</h4>
+              <p>Leve alegria e humanização para pacientes oncológicos.</p>
+              <a href="contato.html" class="btn-card-action">QUERO APOIAR <i class="fa-regular fa-heart"></i></a>
+            </div>
+          </div>
+
+          <div class="card-captacao">
+            <div class="card-captacao-img" style="background-image: url('https://picsum.photos/400/250?random=3');">
+              <span class="tag-captacao">EM CAPTAÇÃO</span>
+            </div>
+            <div class="card-captacao-body">
+              <h4>Uma Palavra</h4>
+              <p>Documentário sobre inclusão e empatia nas escolas.</p>
+              <a href="contato.html" class="btn-card-action">QUERO PATROCINAR <i class="fa-regular fa-heart"></i></a>
+            </div>
+          </div>
+
+          <div class="card-captacao">
+            <div class="card-captacao-img" style="background-image: url('https://picsum.photos/400/250?random=4');">
+              <span class="tag-captacao">EM CAPTAÇÃO</span>
+            </div>
+            <div class="card-captacao-body">
+              <h4>Se Manca – Websérie</h4>
+              <p>História de superação, inclusão e protagonismo PCD.</p>
+              <a href="contato.html" class="btn-card-action-outline">SAIBA MAIS <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="card-captacao">
+            <div class="card-captacao-img" style="background-image: url('associacao.jpeg');">
+              <span class="tag-captacao">EM CAPTAÇÃO</span>
+            </div>
+            <div class="card-captacao-body">
+              <h4>Festa Junina Estrela do Oriente</h4>
+              <p>Cultura, tradição e entretenimento para toda a comunidade.</p>
+              <a href="contato.html" class="btn-card-action">QUERO APOIAR <i class="fa-regular fa-heart"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- SEÇÃO: INCENTIVO FISCAL E DOAÇÃO VIA IR -->
+<section class="section section-incentivos" id="incentivos-fiscais">
+  <div class="container">
+    
+    <div class="section-title-center">
+      <i class="fa-solid fa-star star-icon-small"></i>
+      <h2>INCENTIVO FISCAL E DOAÇÕES VIA IMPOSTOS</h2>
+      <p>Descubra como destinar parte dos seus impostos (Pessoa Física ou Jurídica) para apoiar a cultura e transformar vidas sem pagar nada a mais por isso.</p>
+    </div>
+
+    <!-- ABAS / CARDS DE INCENTIVO -->
+    <div class="incentivos-grid">
+      
+      <!-- CARD 1: ROUANET PF -->
+      <div class="incentivo-card">
+        <div class="inc-header">
+          <span class="inc-tag">PESSOA FÍSICA</span>
+          <h3>Lei Rouanet (Imposto de Renda)</h3>
+        </div>
+        <div class="inc-body">
+          <h4>Como funciona?</h4>
+          <p>Se você faz a declaração do Imposto de Renda no modelo completo, pode destinar parte do imposto que pagaria ao Governo Federal para apoiar um projeto cultural aprovado na Lei Rouanet. Você não paga nada a mais por isso. Em vez de o valor ir integralmente para o governo, ele é direcionado para um projeto cultural de sua escolha.</p>
+          
+          <div class="inc-highlight">
+            <strong>Quanto posso destinar?</strong>
+            <span>Até 6% do Imposto de Renda devido.</span>
+          </div>
+
+          <div class="inc-example">
+            <p><strong>Exemplo prático:</strong> Se o seu Imposto de Renda devido é de R$ 5.000,00, você pode destinar até <strong>R$ 300,00</strong> para um projeto cultural. Esse valor será abatido do imposto.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: ROUANET PJ -->
+      <div class="incentivo-card">
+        <div class="inc-header">
+          <span class="inc-tag">PESSOA JURÍDICA</span>
+          <h3>Lei Rouanet (Lucro Real)</h3>
+        </div>
+        <div class="inc-body">
+          <h4>Como funciona?</h4>
+          <p>Empresas tributadas pelo Lucro Real podem incentivar projetos culturais por meio da Lei Rouanet. A empresa direciona parte do Imposto de Renda devido para um projeto aprovado e recebe o benefício fiscal previsto na legislação.</p>
+          
+          <div class="inc-highlight">
+            <strong>Quanto posso destinar?</strong>
+            <span>Até 4% do Imposto de Renda devido.</span>
+          </div>
+
+          <div class="inc-example">
+            <p><strong>Exemplo prático:</strong> Uma empresa com R$ 500.000,00 de IR devido poderá destinar até <strong>R$ 20.000,00</strong> para um projeto cultural aprovado.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: ICMS MINAS GERAIS -->
+      <div class="incentivo-card">
+        <div class="inc-header alt-color">
+          <span class="inc-tag">MINAS GERAIS</span>
+          <h3>Incentivo Fiscal via ICMS</h3>
+        </div>
+        <div class="inc-body">
+          <h4>Como funciona?</h4>
+          <p>Empresas podem apoiar projetos culturais aprovados na Lei Estadual de Incentivo à Cultura de Minas Gerais utilizando parte do ICMS que seria recolhido ao Estado. Assim, o recurso é investido diretamente na cultura, fortalecendo projetos que beneficiam a população.</p>
+          
+          <h4>Quem pode participar?</h4>
+          <p>Empresas contribuintes do ICMS que atendam aos requisitos da legislação estadual.</p>
+
+          <div class="inc-vantagens">
+            <strong>Vantagens:</strong>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Incentivo à cultura mineira</li>
+              <li><i class="fa-solid fa-check"></i> Fortalecimento da marca</li>
+              <li><i class="fa-solid fa-check"></i> Investimento social com benefício fiscal</li>
+              <li><i class="fa-solid fa-check"></i> Aproximação com a comunidade</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- LINK EXTERNO SOLICITADO -->
+    <div class="incentivo-external-link text-center">
+      <a href="https://portaldoincentivo.com.br/visitors/how_encourage/1" target="_blank" rel="noopener noreferrer" class="btn btn-outline-navy">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> Saiba mais sobre como incentivar projetos no Portal do Incentivo
+      </a>
+    </div>
+
+  </div>
+</section>
+  
   <!-- CTA BANNER -->
   <section class="cta-banner">
     <div class="container cta-flex">
@@ -221,22 +406,20 @@
         <p>Apoie projetos que transformam vidas através da cultura, educação, saúde e inclusão social.</p>
       </div>
       <div class="cta-actions">
-        <a href="#" class="btn btn-green-fill">Quero Patrocinar</a>
-        <a href="#" class="btn btn-white-fill"><i class="fa-regular fa-heart"></i> Quero Doar</a>
+        <a href="contato.html" class="btn btn-green-fill">Quero Patrocinar</a>
+        <a href="contato.html" class="btn btn-white-fill"><i class="fa-regular fa-heart"></i> Quero Doar</a>
       </div>
     </div>
   </section>
+
+  
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <div class="logo logo-white">
-          <div class="logo-symbol">▲</div>
-          <div class="logo-text">
-            <span class="brand-name">LAZARUS</span>
-            <span class="brand-sub">ASSESSORIA & PROJETOS</span>
-          </div>
+          <img src="logo.png" alt="Lazarus Assessoria & Projetos">
         </div>
         <p>Conectamos ideias, pessoas e oportunidades para transformar projetos em impacto social, cultural, educacional e institucional.</p>
         <div class="social-links">
@@ -255,9 +438,8 @@
           <li><a href="sobre.html">A Lazarus</a></li>
           <li><a href="servicos.html">Serviços</a></li>
           <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="captação.html">Captação</a></li>
+          <li><a href="captacao.html">Captação</a></li>
           <li><a href="editais.html">Editais</a></li>
-          <li><a href="conteudo.html">Conteúdo</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>
       </div>
@@ -281,10 +463,9 @@
           <li><i class="fa-solid fa-envelope"></i> lazarusassessoria@gmail.com</li>
           <li><i class="fa-solid fa-location-dot"></i> Uberlândia - MG</li>
         </ul>
-        <a href="https://wa.me/5534991921790" target="_blank" class="btn-whatsapp" style="color: #ffffff; background-color: #25D366; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block;" hover="background-color: #1EBE5D; active: background-color: #1EBE5D;">
-    <i class="fa-brands fa-whatsapp"></i>
-    Fale conosco pelo WhatsApp
-</a>
+        <a href="https://wa.me/5534991921790" target="_blank" class="btn-whatsapp" style="color: #ffffff; background-color: #25D366; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block;">
+          <i class="fa-brands fa-whatsapp"></i> Fale conosco pelo WhatsApp
+        </a>
       </div>
     </div>
 
@@ -294,18 +475,5 @@
   </footer>
 
   <script src="script.js"></script>
-
- <!-- <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-    </div>
-</div>
-
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-
-<script>
-new window.VLibras.Widget('https://vlibras.gov.br/app');-->
-</script>
 </body>
 </html>
