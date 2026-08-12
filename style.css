@@ -4463,6 +4463,7 @@ body {
   background-position: center;
 }
 
+
 /* Conteúdo interno dos cards */
 
 .eco-card-content {
@@ -4720,4 +4721,31 @@ body {
   .incentivos-grid {
     grid-template-columns: 1fr;
   }
+}
+.partners-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.partner-logo {
+  flex: 1;
+  min-width: 140px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 15px;
+}
+
+.partner-logo img {
+  max-width: 150px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
