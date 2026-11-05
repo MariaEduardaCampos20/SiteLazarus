@@ -128,27 +128,19 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("mensagem").value.trim();
 
 
-      // WhatsApp da empresa
-      const numeroWhatsApp = "553491556012";
-
-
       const texto =
 `Olá! Vim pelo site da Lazarus.
 
-*Nome:* ${nome}
-*E-mail:* ${email}
-*Telefone:* ${telefone || "Não informado"}
-*Assunto:* ${assunto || "Não informado"}
+Nome: ${nome}
+E-mail: ${email}
+Telefone: ${telefone || "Não informado"}
+Assunto: ${assunto || "Não informado"}
 
-*Mensagem:*
+Mensagem:
 ${mensagem}`;
 
-
-      const url =
-        `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
-
-
-      window.open(url, "_blank");
+      window.location.href =
+        `mailto:lazarusassessoria@gmail.com?subject=${encodeURIComponent("Contato pelo site - " + (assunto || "Geral"))}&body=${encodeURIComponent(texto)}`;
 
     });
 
