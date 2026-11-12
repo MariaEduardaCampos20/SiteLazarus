@@ -1,216 +1,454 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lazarus - Assessoria e Projetos</title>
-  <!-- Ícones FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazarus - Assessoria e Projetos</title>
+    <!-- Ícones FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER & NAVEGAÇÃO -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">
+          <img
+            src="logo.png"
+            alt="Lazarus Assessoria e Projetos"
+            width="160"
+            height="160"
+            fetchpriority="high"
+          />
+        </a>
 
-  <!-- HEADER & NAVEGAÇÃO -->
-  <header class="header">
-    <div class="container header-container">
-      <a href="index.html" class="logo">
-        <img src="logo.png" alt="Lazarus Assessoria e Projetos" width="160" height="160" fetchpriority="high">
-      </a>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">INÍCIO</a></li>
+            <li><a href="sobre.html">A LAZARUS</a></li>
+            <li><a href="servicos.html">SERVIÇOS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+          </ul>
+        </nav>
 
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">INÍCIO</a></li>
-          <li><a href="sobre.html">A LAZARUS</a></li>
-          <li><a href="servicos.html">SERVIÇOS</a></li>
-          <li><a href="contato.html">CONTATO</a></li>
-        </ul>
-      </nav>
+        <a href="contato.html" class="btn btn-header">
+          <i class="fa-regular fa-heart"></i> QUERO APOIAR
+        </a>
 
-      <a href="contato.html" class="btn btn-header">
-        <i class="fa-regular fa-heart"></i> QUERO APOIAR
-      </a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-        </div>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-bg-overlay"></div>
-    <div class="container hero-container">
-      <div class="hero-content">
-        <h1>Transformando ideias em projetos.</h1>
-        <p>Elaboração, captação de recursos, gestão, execução e prestação de contas de projetos e assessoria em emendas parlamentares.</p>
-        <div class="hero-buttons">
-                    <a href="contato.html" class="btn btn-outline"><i class="fa-solid fa-building"></i> Patrocinar</a>
-          <a href="contato.html" class="btn btn-white"><i class="fa-regular fa-heart"></i> Doar</a>
-        </div>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- NOSSOS ECOSSISTEMAS DE IMPACTO -->
-  <section class="section ecosystem-section" id="ecossistemas">
-    <div class="container">
-      <div class="section-title-center">
-        <i class="fa-solid fa-star star-icon-small"></i>
-        <h2>PARCERIAS QUE TRANSFORMAM</h2>
-        <p>Iniciativas que transformam vidas, fortalecem a cultura e geram impacto social por meio da arte, da educação e da gestão de projetos.</p>
-      </div>
-
-      <div class="ecosystem-grid"><div class="eco-card eco-lazarus"><div class="eco-card-header-img eco-logo-box" style="background-image: url('LogoBranca.jpeg');" role="img" aria-label="Lazarus"></div><div class="eco-card-content"><a href="sobre.html" class="btn-eco-outline">SOBRE <i class="fa-solid fa-arrow-right"></i></a></div></div>
-<div class="eco-card eco-7ato"><div class="eco-card-header-img eco-logo-box" style="background-image: url('logoOng.jpeg');" role="img" aria-label="ONG 7º Ato"><div class="eco-badge-circle" style="background-image: url(pontoDeC.jpeg);"></div></div><div class="eco-card-content"><p>Conheça a ONG 7º Ato e suas ações.</p><a href="7ato.html" class="btn-eco-outline">SOBRE <i class="fa-solid fa-arrow-right"></i></a></div></div>
-<div class="eco-card eco-circo"><div class="eco-card-header-img eco-logo-box" style="background-image: url('logocirculo.jpg');" role="img" aria-label="Circo Pititico"><div class="eco-badge-circle" style="background-image: url(pontoDeC.jpeg);"></div></div><div class="eco-card-content"><p>Arte, educação e diversão por onde passamos. Espetáculos, oficinas e intervenções que encantam.</p><a href="circo.html" class="btn-eco-outline">SOBRE <i class="fa-solid fa-arrow-right"></i></a></div></div>
-<div class="eco-card eco-estrela"><div class="eco-card-header-img eco-logo-box" style="background-image: url('Capadoprosas.jpeg');" role="img" aria-label="Associação Estrela do Oriente"><div class="eco-badge-circle" style="background-image: url(pontoDeC.jpeg);"></div></div><div class="eco-card-content"><p>Mais de 20 anos preservando tradições, fortalecendo a cultura popular e promovendo a cidadania.</p><a href="associacao.html" class="btn-eco-outline">SOBRE <i class="fa-solid fa-arrow-right"></i></a></div></div>
-</div></div></section>
-
-  <!-- PROJETOS EM CAPTAÇÃO -->
-  <section class="section-captacao-home">
-    <div class="container">
-      <div class="captacao-home-grid">
-        
-        <!-- Coluna Esquerda -->
-        <div class="captacao-home-left">
-          <h2>PROJETOS EM CAPTAÇÃO</h2>
-          <p>Apoie estas iniciativas e faça parte da transformação que promovemos.</p>
-          <a href="captacao.html" class="btn btn-green-fill">VER TODOS OS PROJETOS <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-
-        <!-- Coluna Direita: Cards de Projetos -->
-        <div class="captacao-home-cards"><div class="card-captacao"><div class="card-captacao-img logo-img" style="background-image: url('fotocirco.jpeg');"><span class="tag-captacao">EM CAPTAÇÃO</span></div><div class="card-captacao-body"><h4>Doutores Pititicos</h4><p>Palhaçaria que leva alegria, acolhimento e humanização a crianças e adolescentes em ambientes de saúde.</p><a href="contato.html" class="btn-card-action">QUERO PATROCINAR <i class="fa-regular fa-heart"></i></a></div></div>
-<div class="card-captacao"><div class="card-captacao-img logo-img" style="background-image: url('logoMundo.jpeg');"><span class="tag-captacao">EM CAPTAÇÃO</span></div><div class="card-captacao-body"><h4>Mundo Encantado</h4><p>Espetáculos teatrais em escolas públicas e eventos culturais gratuitos em praças, levando arte, diversão e cultura às comunidades.</p><a href="contato.html" class="btn-card-action">QUERO PATROCINAR <i class="fa-regular fa-heart"></i></a></div></div>
-<div class="card-captacao"><div class="card-captacao-img logo-img" style="background-image: url('logoCultura.jpeg');"><span class="tag-captacao">EM CAPTAÇÃO</span></div><div class="card-captacao-body"><h4>Cultura Integrativa – Arte, Música e Dança</h4><p>Programação cultural gratuita com teatro, música, dança, vivências culturais e Práticas Integrativas e Complementares em Saúde (PICS).</p><a href="contato.html" class="btn-card-action">QUERO PATROCINAR <i class="fa-regular fa-heart"></i></a></div></div>
-</div></div></div></section>
-
-<!-- SEÇÃO: INCENTIVO FISCAL E DOAÇÃO VIA IR -->
-<section class="section section-incentivos" id="incentivos-fiscais">
-  <div class="container">
-    
-    <div class="section-title-center">
-      <i class="fa-solid fa-star star-icon-small"></i>
-      <h2>TRANSFORME SEU IMPOSTO EM IMPACTO</h2>
-      <p>Destine parte do seu imposto devido para apoiar projetos culturais e sociais e ajude a transformar realidades. Pessoas físicas e empresas podem fazer parte dessa transformação.</p>
-    </div>
-
-    <!-- ABAS / CARDS DE INCENTIVO -->
-    <div class="incentivos-grid">
-      
-      <!-- CARD 1: ROUANET PF -->
-      <div class="incentivo-card">
-        <div class="inc-header">
-          <span class="inc-tag">PESSOA FÍSICA</span>
-          <h3>Lei Rouanet (Imposto de Renda)</h3>
-        </div>
-        <div class="inc-body">
-          <h4>Como funciona?</h4>
-          <p>Se você faz a declaração do Imposto de Renda no modelo completo, pode destinar parte do imposto que pagaria ao Governo Federal para apoiar um projeto cultural aprovado na Lei Rouanet. Você não paga nada a mais por isso. Em vez de o valor ir integralmente para o governo, ele é direcionado para um projeto cultural de sua escolha.</p>
-          
-          <div class="inc-highlight">
-            <strong>Quanto posso destinar?</strong>
-            <span>Até 6% do Imposto de Renda devido.</span>
-          </div>
-
-          <div class="inc-example">
-            <p><strong>Exemplo prático:</strong> Se o seu Imposto de Renda devido é de R$ 5.000,00, você pode destinar até <strong>R$ 300,00</strong> para um projeto cultural. Esse valor será abatido do imposto.</p>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1>Transformando ideias em projetos.</h1>
+          <p>
+            Elaboração, captação de recursos, gestão, execução e prestação de
+            contas de projetos e assessoria em emendas parlamentares.
+          </p>
+          <div class="hero-buttons">
+            <a href="contato.html" class="btn btn-outline"
+              ><i class="fa-solid fa-building"></i> Patrocinar</a
+            >
+            <a href="contato.html" class="btn btn-white"
+              ><i class="fa-regular fa-heart"></i> Doar</a
+            >
           </div>
         </div>
-        <a href="https://portaldoincentivo.com.br/visitors/how_encourage/1" target="_blank" rel="noopener noreferrer" class="btn btn-outline-navy btn-inc-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Saiba mais</a>
       </div>
+    </section>
 
-      <!-- CARD 2: ROUANET PJ -->
-      <div class="incentivo-card">
-        <div class="inc-header">
-          <span class="inc-tag">PESSOA JURÍDICA</span>
-          <h3>Lei Rouanet (Lucro Real)</h3>
+    <!-- NOSSOS ECOSSISTEMAS DE IMPACTO -->
+    <section class="section ecosystem-section" id="ecossistemas">
+      <div class="container">
+        <div class="section-title-center">
+          <i class="fa-solid fa-star star-icon-small"></i>
+          <h2>PARCERIAS QUE TRANSFORMAM</h2>
+          <p>
+            Iniciativas que transformam vidas, fortalecem a cultura e geram
+            impacto social por meio da arte, da educação e da gestão de
+            projetos.
+          </p>
         </div>
-        <div class="inc-body">
-          <h4>Como funciona?</h4>
-          <p>Empresas tributadas pelo Lucro Real podem incentivar projetos culturais por meio da Lei Rouanet. A empresa direciona parte do Imposto de Renda devido para um projeto aprovado e recebe o benefício fiscal previsto na legislação.</p>
-          
-          <div class="inc-highlight">
-            <strong>Quanto posso destinar?</strong>
-            <span>Até 4% do Imposto de Renda devido.</span>
+
+        <div class="ecosystem-grid">
+          <div class="eco-card eco-lazarus">
+            <div
+              class="eco-card-header-img eco-logo-box"
+              style="background-image: url(&quot;LogoBranca.jpeg&quot;)"
+              role="img"
+              aria-label="Lazarus"
+            ></div>
+            <div class="eco-card-content">
+              <a href="sobre.html" class="btn-eco-outline"
+                >SOBRE <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="eco-card eco-7ato">
+            <div
+              class="eco-card-header-img eco-logo-box"
+              style="background-image: url(&quot;logoOng.jpeg&quot;)"
+              role="img"
+              aria-label="ONG 7º Ato"
+            >
+              <div
+                class="eco-badge-circle"
+                style="background-image: url(pontoDeC.jpeg)"
+              ></div>
+            </div>
+            <div class="eco-card-content">
+              <p>Conheça a ONG 7º Ato e suas ações.</p>
+              <a href="7ato.html" class="btn-eco-outline"
+                >SOBRE <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="eco-card eco-circo">
+            <div
+              class="eco-card-header-img eco-logo-box"
+              style="background-image: url(&quot;logocirculo.jpg&quot;)"
+              role="img"
+              aria-label="Circo Pititico"
+            >
+              <div
+                class="eco-badge-circle"
+                style="background-image: url(pontoDeC.jpeg)"
+              ></div>
+            </div>
+            <div class="eco-card-content">
+              <p>
+                Arte, educação e diversão por onde passamos. Espetáculos,
+                oficinas e intervenções que encantam.
+              </p>
+              <a href="circo.html" class="btn-eco-outline"
+                >SOBRE <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="eco-card eco-estrela">
+            <div
+              class="eco-card-header-img eco-logo-box"
+              style="background-image: url(&quot;Capadoprosas.jpeg&quot;)"
+              role="img"
+              aria-label="Associação Estrela do Oriente"
+            >
+              <div
+                class="eco-badge-circle"
+                style="background-image: url(pontoDeC.jpeg)"
+              ></div>
+            </div>
+            <div class="eco-card-content">
+              <p>
+                Mais de 20 anos preservando tradições, fortalecendo a cultura
+                popular e promovendo a cidadania.
+              </p>
+              <a href="associacao.html" class="btn-eco-outline"
+                >SOBRE <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS EM CAPTAÇÃO -->
+    <section class="section-captacao-home">
+      <div class="container">
+        <div class="captacao-home-grid">
+          <!-- Coluna Esquerda -->
+          <div class="captacao-home-left">
+            <h2>PROJETOS EM CAPTAÇÃO</h2>
+            <p>
+              Apoie estas iniciativas e faça parte da transformação que
+              promovemos.
+            </p>
+            <a href="captacao.html" class="btn btn-green-fill"
+              >VER TODOS OS PROJETOS <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
 
-          <div class="inc-example">
-            <p><strong>Exemplo prático:</strong> Uma empresa com R$ 500.000,00 de IR devido poderá destinar até <strong>R$ 20.000,00</strong> para um projeto cultural aprovado.</p>
+          <!-- Coluna Direita: Cards de Projetos -->
+          <div class="captacao-home-cards">
+            <div class="card-captacao">
+              <div
+                class="card-captacao-img logo-img"
+                style="background-image: url(&quot;fotocirco.jpeg&quot;)"
+                role="img"
+                aria-label="Doutores Pititicos"
+              >
+                <span class="tag-captacao">EM CAPTAÇÃO</span>
+              </div>
+              <div class="card-captacao-body">
+                <h4>Doutores Pititicos</h4>
+                <p>
+                  Palhaçaria que leva alegria, acolhimento e humanização a
+                  crianças e adolescentes em ambientes de saúde.
+                </p>
+                <a href="contato.html" class="btn-card-action"
+                  >QUERO PATROCINAR <i class="fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="card-captacao">
+              <div
+                class="card-captacao-img logo-img"
+                style="background-image: url(&quot;mundoLogo.jpeg&quot;)"
+                role="img"
+                aria-label="Mundo Encantado"
+              >
+                <span class="tag-captacao">EM CAPTAÇÃO</span>
+              </div>
+              <div class="card-captacao-body">
+                <h4>Mundo Encantado</h4>
+                <p>
+                  Espetáculos teatrais em escolas públicas e eventos culturais
+                  gratuitos em praças, levando arte, diversão e cultura às
+                  comunidades.
+                </p>
+                <a href="contato.html" class="btn-card-action"
+                  >QUERO PATROCINAR <i class="fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="card-captacao">
+              <div
+                class="card-captacao-img logo-img"
+                style="background-image: url(&quot;logoCultura.jpeg&quot;)"
+                role="img"
+                aria-label="Cultura Integrativa – Arte, Música e Dança"
+              >
+                <span class="tag-captacao">EM CAPTAÇÃO</span>
+              </div>
+              <div class="card-captacao-body">
+                <h4>Cultura Integrativa – Arte, Música e Dança</h4>
+                <p>
+                  Programação cultural gratuita com teatro, música, dança,
+                  vivências culturais e Práticas Integrativas e Complementares
+                  em Saúde (PICS).
+                </p>
+                <a href="contato.html" class="btn-card-action"
+                  >QUERO PATROCINAR <i class="fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
-        <a href="https://portaldoincentivo.com.br/visitors/how_encourage/1" target="_blank" rel="noopener noreferrer" class="btn btn-outline-navy btn-inc-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Saiba mais</a>
       </div>
+    </section>
 
-      <!-- CARD 3: MUNICIPAL PMIC -->
-      <div class="incentivo-card">
-        <div class="inc-header">
-          <span class="inc-tag">MUNICIPAL</span>
-          <h3>Lei Municipal (PMIC) – IPTU e ISS</h3>
+    <!-- SEÇÃO: INCENTIVO FISCAL E DOAÇÃO VIA IR -->
+    <section class="section section-incentivos" id="incentivos-fiscais">
+      <div class="container">
+        <div class="section-title-center">
+          <i class="fa-solid fa-star star-icon-small"></i>
+          <h2>TRANSFORME SEU IMPOSTO EM IMPACTO</h2>
+          <p>
+            Destine parte do seu imposto devido para apoiar projetos culturais e
+            sociais e ajude a transformar realidades. Pessoas físicas e empresas
+            podem fazer parte dessa transformação.
+          </p>
         </div>
-        <div class="inc-body">
-          <h4>Como funciona a dedução no PMIC</h4>
-          <p>A Lei do PMIC estipula regras claras sobre o quanto do seu imposto pode ser convertido em apoio cultural:</p>
-          <ul class="inc-list">
-            <li><strong>Teto Global do Município:</strong> A Prefeitura destina até 3% da receita global arrecadada com o IPTU e o ISS do ano anterior para custear o incentivo fiscal do programa.</li>
-            <li><strong>Limite por Contribuinte:</strong> Tanto pessoas físicas quanto jurídicas que apoiarem financeiramente um projeto aprovado podem deduzir até o valor máximo de 25% do imposto devido em cada modalidade tributária (25% do IPTU e/ou 25% do ISS).</li>
-            <li><strong>Procedimento Prático:</strong> O valor deduzido correspondente ao incentivo dado ao projeto deve ser depositado diretamente na conta bancária do Projeto Cultural, após as devidas validações da Secretaria Municipal de Finanças.</li>
+
+        <!-- ABAS / CARDS DE INCENTIVO -->
+        <div class="incentivos-grid">
+          <!-- CARD 1: ROUANET PF -->
+          <div class="incentivo-card">
+            <div class="inc-header">
+              <span class="inc-tag">PESSOA FÍSICA</span>
+              <h3>Lei Rouanet (Imposto de Renda)</h3>
+            </div>
+            <div class="inc-body">
+              <h4>Como funciona?</h4>
+              <p>
+                Se você faz a declaração do Imposto de Renda no modelo completo,
+                pode destinar parte do imposto que pagaria ao Governo Federal
+                para apoiar um projeto cultural aprovado na Lei Rouanet. Você
+                não paga nada a mais por isso. Em vez de o valor ir
+                integralmente para o governo, ele é direcionado para um projeto
+                cultural de sua escolha.
+              </p>
+
+              <div class="inc-highlight">
+                <strong>Quanto posso destinar?</strong>
+                <span>Até 6% do Imposto de Renda devido.</span>
+              </div>
+
+              <div class="inc-example">
+                <p>
+                  <strong>Exemplo prático:</strong> Se o seu Imposto de Renda
+                  devido é de R$ 5.000,00, você pode destinar até
+                  <strong>R$ 300,00</strong> para um projeto cultural. Esse
+                  valor será abatido do imposto.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://portaldoincentivo.com.br/visitors/how_encourage/1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline-navy btn-inc-link"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i> Saiba
+              mais</a
+            >
+          </div>
+
+          <!-- CARD 2: ROUANET PJ -->
+          <div class="incentivo-card">
+            <div class="inc-header">
+              <span class="inc-tag">PESSOA JURÍDICA</span>
+              <h3>Lei Rouanet (Lucro Real)</h3>
+            </div>
+            <div class="inc-body">
+              <h4>Como funciona?</h4>
+              <p>
+                Empresas tributadas pelo Lucro Real podem incentivar projetos
+                culturais por meio da Lei Rouanet. A empresa direciona parte do
+                Imposto de Renda devido para um projeto aprovado e recebe o
+                benefício fiscal previsto na legislação.
+              </p>
+
+              <div class="inc-highlight">
+                <strong>Quanto posso destinar?</strong>
+                <span>Até 4% do Imposto de Renda devido.</span>
+              </div>
+
+              <div class="inc-example">
+                <p>
+                  <strong>Exemplo prático:</strong> Uma empresa com R$
+                  500.000,00 de IR devido poderá destinar até
+                  <strong>R$ 20.000,00</strong> para um projeto cultural
+                  aprovado.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://portaldoincentivo.com.br/visitors/how_encourage/1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline-navy btn-inc-link"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i> Saiba
+              mais</a
+            >
+          </div>
+
+          <!-- CARD 3: MUNICIPAL PMIC -->
+          <div class="incentivo-card">
+            <div class="inc-header">
+              <span class="inc-tag">MUNICIPAL</span>
+              <h3>Lei Municipal (PMIC) – IPTU e ISS</h3>
+            </div>
+            <div class="inc-body">
+              <h4>Como funciona a dedução no PMIC</h4>
+              <p>
+                A Lei do PMIC estipula regras claras sobre o quanto do seu
+                imposto pode ser convertido em apoio cultural:
+              </p>
+              <ul class="inc-list">
+                <li>
+                  <strong>Teto Global do Município:</strong> A Prefeitura
+                  destina até 3% da receita global arrecadada com o IPTU e o ISS
+                  do ano anterior para custear o incentivo fiscal do programa.
+                </li>
+                <li>
+                  <strong>Limite por Contribuinte:</strong> Tanto pessoas
+                  físicas quanto jurídicas que apoiarem financeiramente um
+                  projeto aprovado podem deduzir até o valor máximo de 25% do
+                  imposto devido em cada modalidade tributária (25% do IPTU e/ou
+                  25% do ISS).
+                </li>
+                <li>
+                  <strong>Procedimento Prático:</strong> O valor deduzido
+                  correspondente ao incentivo dado ao projeto deve ser
+                  depositado diretamente na conta bancária do Projeto Cultural,
+                  após as devidas validações da Secretaria Municipal de
+                  Finanças.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+      <div class="container cta-flex">
+        <div class="cta-text">
+          <span class="cta-sub">FAÇA PARTE DESTA TRANSFORMAÇÃO</span>
+          <h3>Seu apoio faz a diferença.</h3>
+          <p>Apoie projetos que deixam marcas positivas na vida das pessoas.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contato.html" class="btn btn-green-fill">Quero Patrocinar</a>
+          <a href="contato.html" class="btn btn-white-fill"
+            ><i class="fa-regular fa-heart"></i> Quero Doar</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <p>
+            Conectamos ideias, pessoas e oportunidades para transformar projetos
+            em impacto social, cultural, educacional e institucional.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>NAVEGAÇÃO</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">A Lazarus</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>LINKS IMPORTANTES</h4>
+          <ul>
+            <li>
+              <a href="politica-privacidade.html">Política de Privacidade</a>
+            </li>
+            <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>FALE CONOSCO</h4>
+          <ul class="contact-info">
+            <li>
+              <i class="fa-solid fa-envelope"></i> lazarusassessoria@gmail.com
+            </li>
+            <li><i class="fa-solid fa-location-dot"></i> Uberlândia - MG</li>
           </ul>
         </div>
       </div>
 
-    </div>
-
-    </div>
-</section>
-  
-  <!-- CTA BANNER -->
-  <section class="cta-banner">
-    <div class="container cta-flex">
-      <div class="cta-text">
-        <span class="cta-sub">FAÇA PARTE DESTA TRANSFORMAÇÃO</span>
-        <h3>Seu apoio faz a diferença.</h3>
-        <p>Apoie projetos que deixam marcas positivas na vida das pessoas.</p>
+      <div class="footer-bottom">
+        <p>
+          © 2026 Lazarus Assessoria e Projetos. Todos os direitos reservados.
+        </p>
       </div>
-      <div class="cta-actions">
-        <a href="contato.html" class="btn btn-green-fill">Quero Patrocinar</a>
-        <a href="contato.html" class="btn btn-white-fill"><i class="fa-regular fa-heart"></i> Quero Doar</a>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <p>Conectamos ideias, pessoas e oportunidades para transformar projetos em impacto social, cultural, educacional e institucional.</p>
-        </div>
-
-      <div class="footer-col">
-        <h4>NAVEGAÇÃO</h4>
-        <ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">A Lazarus</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="contato.html">Contato</a></li></ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>LINKS IMPORTANTES</h4>
-        <ul><li><a href="politica-privacidade.html">Política de Privacidade</a></li><li><a href="termos-de-uso.html">Termos de Uso</a></li></ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>FALE CONOSCO</h4>
-        <ul class="contact-info">
-          <li><i class="fa-solid fa-envelope"></i> lazarusassessoria@gmail.com</li>
-          <li><i class="fa-solid fa-location-dot"></i> Uberlândia - MG</li>
-        </ul>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Lazarus Assessoria e Projetos. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

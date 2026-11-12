@@ -4948,3 +4948,117 @@ body {
     padding: 70px 20px;
   }
 }
+/* PADRONIZAÇÃO DAS IMAGENS DOS PROJETOS */
+.projeto-card img {
+  display: block;
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===== AJUSTES FINAIS: PROJETOS EM CAPTAÇÃO ===== */
+.captacao-home-cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.card-captacao {
+  min-width: 0;
+  height: 100%;
+}
+
+.card-captacao-img.logo-img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 145px;
+  min-height: 145px;
+  flex: 0 0 145px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+/* Preserva a logo quadrada sem cortar o nome e o símbolo */
+.captacao-home-cards .card-captacao:nth-child(2) .card-captacao-img {
+  background-size: contain;
+}
+
+.card-captacao-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.btn-card-action {
+  margin-top: auto;
+}
+
+/* O Circo utiliza seu próprio banner, sem alterar o Hero da página inicial
+   nem o fundo da Associação Estrela do Oriente. */
+.estrela-hero.circo-hero {
+  background-image: url("Circo Pititico_01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 900px) {
+  .captacao-home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .captacao-home-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .captacao-home-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card-captacao-img.logo-img {
+    height: 180px;
+    min-height: 180px;
+    flex-basis: 180px;
+  }
+}
+
+
+/* ASSOCIAÇÃO ESTRELA DO ORIENTE — conforme documento da cliente */
+.pagina-associacao .associacao-hero {
+  position: relative;
+  background: #fefce8;
+  background-image: none;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.pagina-associacao .associacao-hero .org-hero-logo {
+  display: block;
+  width: min(100%, 340px);
+  max-height: 180px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.pagina-associacao .associacao-intro {
+  max-width: 900px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.pagina-associacao .associacao-intro h1 {
+  color: var(--navy-main);
+  font-size: clamp(25px, 3vw, 36px);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.pagina-associacao .associacao-intro p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  text-align: center;
+}
