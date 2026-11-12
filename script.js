@@ -127,8 +127,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const mensagem =
         document.getElementById("mensagem").value.trim();
 
+const numeroWhatsApp = "5534991921790";
 
-      const texto =
+const texto =
 `Olá! Vim pelo site da Lazarus.
 
 Nome: ${nome}
@@ -139,11 +140,10 @@ Assunto: ${assunto || "Não informado"}
 Mensagem:
 ${mensagem}`;
 
-      window.location.href =
-        `mailto:lazarusassessoria@gmail.com?subject=${encodeURIComponent("Contato pelo site - " + (assunto || "Geral"))}&body=${encodeURIComponent(texto)}`;
+const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+
+window.open(url, "_blank");
 
     });
-
   }
-
 });
