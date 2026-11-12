@@ -4812,7 +4812,139 @@ body {
 @media (max-width:520px){.acoes-grid{grid-template-columns:1fr}}
 
 /* padronização das páginas Associação / Circo / 7º Ato */
-.acoes-grid{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.acoes-vazio{color:#64748b;margin-top:20px}
-.org-hero-banner{width:100%;max-width:100%;border-radius:14px;margin:0 auto 18px;display:block}
-.estrela-hero-center{max-width:960px}
+
+.estrela-hero-center {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.org-hero-banner {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+  margin: 0 auto 20px;
+}
+
+.org-hero-logo {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  max-height: 180px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 18px;
+}
+
+.org-hero-selo {
+  display: block;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin: 18px auto 0;
+}
+
+.acoes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.acao-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+}
+
+.acao-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+}
+
+.acao-body {
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .acoes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .org-hero-banner {
+    aspect-ratio: 4 / 3;
+  }
+
+  .acoes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* HERO DA ASSOCIAÇÃO */
+.estrela-hero {
+  position: relative;
+  background-image: url("associacao.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.estrela-hero .hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 25, 40, 0.62);
+}
+
+.estrela-hero .hero-container {
+  position: relative;
+  z-index: 1;
+}
+
+.estrela-hero .hero-content {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.estrela-hero .hero-content h1 {
+  color: #fff;
+}
+
+.estrela-hero .hero-content p {
+  color: #fff;
+  line-height: 1.7;
+}
+
+.estrela-hero .org-hero-logo {
+  max-width: 300px;
+  max-height: 160px;
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto 25px;
+}
+
+.estrela-hero .org-hero-selo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin: 25px auto 0;
+}
+
+@media (max-width: 600px) {
+  .estrela-hero {
+    padding: 70px 20px;
+  }
+}
