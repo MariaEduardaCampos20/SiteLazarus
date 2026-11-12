@@ -4780,3 +4780,39 @@ body {
 .ecosystem-grid .eco-logo-box{display:block;padding:0;height:200px;background-color:#fff;background-size:cover;background-position:center;background-repeat:no-repeat}
 .ecosystem-grid .eco-lazarus .eco-logo-box{background-color:#0a2a52;background-size:72% auto;background-position:center}
 .ecosystem-grid .eco-card-content{padding-top:40px}
+
+/* ===== Ajustes cliente (2ª rodada) ===== */
+.ecosystem-grid .eco-lazarus .eco-logo-box{background-color:#f3efe6;background-size:cover;background-position:center}
+.ecosystem-grid .eco-7ato .eco-logo-box,.ecosystem-grid .eco-circo .eco-logo-box,.ecosystem-grid .eco-estrela .eco-logo-box{box-sizing:border-box;padding:10px 10px 38px;background-origin:content-box;background-size:contain;background-position:center top}
+.ecosystem-grid .eco-7ato .eco-logo-box,.ecosystem-grid .eco-estrela .eco-logo-box{background-color:#fff}
+.ecosystem-grid .eco-circo .eco-logo-box{background-color:#ffd400}
+.ecosystem-grid .eco-card-content{padding-top:52px}
+.ecosystem-grid .eco-lazarus .eco-card-content{padding-top:30px;justify-content:flex-end}
+.inc-list{margin:8px 0 0 18px;list-style:disc}
+.inc-list li{font-size:13px;line-height:1.5;text-align:justify;margin-bottom:8px}
+.sobre-hero-text{max-width:900px}
+.partner-logo img{max-height:70px;max-width:160px;object-fit:contain;display:block}
+.partners-carousel{gap:36px}
+.estrela-hero-center{max-width:900px;margin:0 auto;text-align:center}
+.org-hero-logo{max-width:340px;width:100%;margin:0 auto 10px;display:block}
+.org-hero-selo{width:90px;margin:0 auto;display:block}
+.acoes-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:30px;text-align:left}
+.acao-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.acao-card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.acao-body{padding:16px}
+.acao-body h3{font-size:14px;color:var(--navy-main);margin-bottom:6px}
+.acao-body h4{font-size:12.5px;color:#15803d;margin-bottom:8px}
+.acao-body p{font-size:12.5px;line-height:1.55;color:var(--text-muted);text-align:justify}
+.quem-somos-simple{max-width:860px;margin:0 auto;text-align:center}
+.quem-somos-simple h2{margin:8px 0 14px}
+.quem-somos-simple p{line-height:1.7;margin-bottom:12px}
+.circo-banner-hero .hero-banner-container{position:relative}
+.banner-selo{position:absolute;right:24px;bottom:16px;width:84px}
+@media (max-width:900px){.acoes-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.acoes-grid{grid-template-columns:1fr}}
+
+/* padronização das páginas Associação / Circo / 7º Ato */
+.acoes-grid{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.acoes-vazio{color:#64748b;margin-top:20px}
+.org-hero-banner{width:100%;max-width:100%;border-radius:14px;margin:0 auto 18px;display:block}
+.estrela-hero-center{max-width:960px}
