@@ -5062,3 +5062,76 @@ body {
   line-height: 1.7;
   text-align: center;
 }
+
+
+/* ==========================================================================
+   NOVAS PÁGINAS (Lazarus, ONG 7º Ato, Associação) - nov/2026
+   ========================================================================== */
+
+/* cabeçalho sem logo (a logo fica na capa da página) */
+.header .container.header-no-logo { justify-content: center; gap: 40px; }
+@media (max-width: 900px) {
+  .header .container.header-no-logo { justify-content: flex-start; }
+  .header-no-logo .menu-toggle { margin-left: auto; }
+}
+
+/* capa em largura total */
+.page-cover { background: #fff; line-height: 0; }
+.page-cover img { width: 100%; height: auto; display: block; }
+
+/* selo Ponto de Cultura logo abaixo da capa, sem cobrir a logo */
+.page-seal { text-align: center; margin-top: 14px; }
+.page-seal img { width: 110px; height: 110px; object-fit: contain; }
+
+/* texto institucional */
+.page-about { padding: 28px 0 40px; background: #fff; }
+.page-about-inner { max-width: 960px; }
+.page-about h2 { font-size: 20px; font-weight: 800; color: var(--navy-main); margin-bottom: 14px; }
+.page-about p { font-size: 14px; line-height: 1.7; color: #1e293b; text-align: justify; margin-bottom: 12px; }
+
+/* ONG: áreas de atuação */
+.page-areas { padding: 10px 0 70px; background: #fff; }
+.page-title-gold { text-align: center; font-size: 22px; font-weight: 800; color: var(--navy-main); letter-spacing: 0.5px; }
+.title-underline-gold { width: 120px; height: 3px; margin: 8px auto 30px; border-radius: 2px; background: linear-gradient(90deg, transparent, #c9a227, transparent); }
+.areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; max-width: 1000px; margin: 0 auto; }
+.area-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 18px rgba(0, 25, 53, 0.12); border-bottom: 3px solid #c9a227; display: flex; flex-direction: column; }
+.area-card img { width: 100%; height: 150px; object-fit: cover; display: block; }
+.area-card-body { display: flex; gap: 10px; padding: 12px 14px 16px; align-items: flex-start; }
+.area-icon { width: 34px; height: 34px; border-radius: 50%; background: #c9a227; color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 15px; }
+.area-card h3 { font-size: 15px; font-weight: 800; color: var(--navy-main); margin-bottom: 3px; }
+.area-card p { font-size: 12px; line-height: 1.45; color: #475569; }
+@media (max-width: 900px) { .areas-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .areas-grid { grid-template-columns: 1fr; } }
+
+/* Lazarus: 6 serviços e grade de parceiros */
+.servicos-grid-6 { grid-template-columns: repeat(6, 1fr); }
+@media (max-width: 1100px) { .servicos-grid-6 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px) { .servicos-grid-6 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .servicos-grid-6 { grid-template-columns: 1fr; } }
+.partners-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 18px 24px; align-items: center; }
+.partners-grid .partner-logo { height: 90px; min-width: 0; display: flex; align-items: center; justify-content: center; padding: 8px; }
+.partners-grid .partner-logo img { max-width: 140px; max-height: 70px; width: auto; height: auto; object-fit: contain; }
+
+/* Primeira página: selo do Ponto de Cultura abaixo da divisão de cor, perto do texto, sem tampar a logo */
+.ecosystem-grid .eco-card-header-img { overflow: visible; }
+.ecosystem-grid .eco-badge-circle {
+  top: 100%; bottom: auto; margin-top: 10px;
+  width: 58px; height: 58px;
+  background-color: #fff; background-size: contain; background-repeat: no-repeat; background-position: center;
+  background-image: url(pontoDeCultura.png) !important;
+  border: 2px solid #fff;
+}
+.ecosystem-grid .eco-7ato .eco-card-content,
+.ecosystem-grid .eco-circo .eco-card-content,
+.ecosystem-grid .eco-estrela .eco-card-content { padding-top: 82px; }
+.ecosystem-grid .eco-7ato .eco-logo-box,
+.ecosystem-grid .eco-circo .eco-logo-box,
+.ecosystem-grid .eco-estrela .eco-logo-box { padding: 14px; background-position: center; background-size: contain; }
+
+/* logo do Circo preenche toda a área amarela (sem retângulo) e a da ONG usa o mesmo branco da imagem */
+.ecosystem-grid .eco-circo .eco-logo-box { padding: 0; background-origin: padding-box; background-size: cover; background-position: 60% center; }
+.ecosystem-grid .eco-7ato .eco-logo-box { background-color: #fefefe; }
+
+/* 5 cards (Circo): centraliza a última linha em vez de deixar um card sozinho à esquerda */
+.acoes-grid.acoes-centro { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+.acoes-grid.acoes-centro .acao-card { width: calc(25% - 12px); min-width: 240px; }

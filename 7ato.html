@@ -14,15 +14,8 @@
   <body>
     <!-- HEADER & NAVEGAÇÃO -->
     <header class="header">
-      <div class="container header-container">
-        <a href="index.html" class="logo"
-          ><img
-            src="logo.png"
-            alt="Lazarus Assessoria e Projetos"
-            width="160"
-            height="160"
-            fetchpriority="high"
-        /></a>
+      <div class="container header-container header-no-logo">
+        
         <nav class="navbar">
           <ul class="nav-links">
             <li><a href="index.html">INÍCIO</a></li>
@@ -44,28 +37,92 @@
         </button>
       </div>
     </header>
+    <section class="page-cover">
+      <img src="CapaDaOng.jpg" alt="ONG 7º ATO - Arte, Talento e Oportunidade" />
+    </section>
+    <div class="page-seal">
+      <img src="pontoDeCultura.png" alt="Ponto de Cultura - Certificado pelo Ministério da Cultura" />
+    </div>
 
-    <section class="org-logo-strip">
-      <div class="container">
-        <img class="org-logo" src="logoOng.jpeg" alt="ONG 7º Ato" />
+    <section class="page-about">
+      <div class="container page-about-inner">
+        <h2>Sobre a ONG</h2>
+        <p>Fundada em 2004, em Uberlândia, Minas Gerais, a ONG 7º ATO – Arte, Talento e Oportunidade é uma organização da sociedade civil, sem fins lucrativos, que atua no desenvolvimento de projetos, programas e ações de interesse público e social.</p>
+        <p>Com uma proposta de atuação multidisciplinar, a instituição tem como propósito promover iniciativas que ampliem o acesso à cultura, à educação, à saúde, ao esporte, à inclusão e ao desenvolvimento comunitário, reconhecendo o potencial transformador das ações coletivas.</p>
+        <p>A ONG desenvolve projetos próprios e estabelece parcerias com empresas, órgãos públicos, instituições de ensino, hospitais, fundações, organizações sociais, artistas, produtores e profissionais de diferentes áreas, unindo conhecimentos, experiências e recursos para a realização de iniciativas de interesse comum.</p>
+        <p>Sua atuação abrange a criação, o planejamento, a estruturação e a execução de projetos culturais, educativos, sociais, esportivos e institucionais, além de ações de formação, capacitação, acessibilidade, inclusão e promoção da qualidade de vida.</p>
+        <p>Na área cultural, promove e apoia atividades como teatro, música, dança, circo, literatura, artes visuais, manifestações populares, festivais, espetáculos e oficinas. Na área da saúde, desenvolve iniciativas de promoção, prevenção, humanização e Práticas Integrativas e Complementares em Saúde (PICS), respeitando as habilitações profissionais e a legislação aplicável.</p>
+        <p>A 7º ATO também está aberta à construção de projetos em cooperação com instituições públicas e privadas, participando de editais, programas, chamamentos públicos, mecanismos de incentivo, parcerias institucionais e outras oportunidades de financiamento e desenvolvimento de ações.</p>
+        <p>Mais do que realizar atividades, a ONG busca construir conexões, fortalecer iniciativas e reunir pessoas e instituições em torno de objetivos que contribuam para uma sociedade mais participativa, inclusiva e com mais oportunidades.</p>
+        <p>Uma instituição aberta à cooperação, ao desenvolvimento de projetos e à construção de realizações que fazem a diferença.</p>
       </div>
     </section>
-    <section class="hero-dark">
+
+    <section class="page-areas">
       <div class="container">
-        <span class="tag">ONG 7º ATO</span>
-        <h1>ONG 7º Ato</h1>
-        <p>Em breve, mais informações sobre a ONG 7º Ato.</p>
-      </div>
-    </section>
-    <section class="cta-banner">
-      <div class="container cta-flex">
-        <div class="cta-text">
-          <h3>Seu apoio faz a diferença.</h3>
-          <p>Apoie projetos que deixam marcas positivas na vida das pessoas.</p>
-        </div>
-        <div class="cta-actions">
-          <a href="contato.html" class="btn btn-green-fill">Patrocinar</a
-          ><a href="contato.html" class="btn btn-white-fill">Doar</a>
+        <h2 class="page-title-gold">NOSSAS ÁREAS DE ATUAÇÃO</h2>
+        <div class="title-underline-gold"></div>
+        <div class="areas-grid">
+          <article class="area-card">
+            <img src="CardCultura.jpg" alt="Cultura e Arte" />
+            <div class="area-card-body">
+              <span class="area-icon"><i class="fa-solid fa-masks-theater"></i></span>
+              <div>
+                <h3>Cultura e Arte</h3>
+                <p>Teatro, música, dança, circo, literatura, artes visuais e cultura popular.</p>
+              </div>
+            </div>
+          </article>
+          <article class="area-card">
+            <img src="CardEducacao.jpg" alt="Educação" />
+            <div class="area-card-body">
+              <span class="area-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+              <div>
+                <h3>Educação</h3>
+                <p>Oficinas, formações, capacitações e projetos educativos e culturais.</p>
+              </div>
+            </div>
+          </article>
+          <article class="area-card">
+            <img src="CardPICS.jpg" alt="Saúde e PICS" />
+            <div class="area-card-body">
+              <span class="area-icon"><i class="fa-solid fa-spa"></i></span>
+              <div>
+                <h3>Saúde e PICS</h3>
+                <p>Promoção da saúde, qualidade de vida e Práticas Integrativas e Complementares em Saúde.</p>
+              </div>
+            </div>
+          </article>
+          <article class="area-card">
+            <img src="CardDesenvolvimento.jpg" alt="Desenvolvimento Social" />
+            <div class="area-card-body">
+              <span class="area-icon"><i class="fa-solid fa-people-group"></i></span>
+              <div>
+                <h3>Desenvolvimento Social</h3>
+                <p>Ações de inclusão, cidadania, apoio a famílias, crianças, adolescentes, idosos e comunidades.</p>
+              </div>
+            </div>
+          </article>
+          <article class="area-card">
+            <img src="CardEsporte.jpg" alt="Esporte e Lazer" />
+            <div class="area-card-body">
+              <span class="area-icon"><i class="fa-solid fa-person-running"></i></span>
+              <div>
+                <h3>Esporte e Lazer</h3>
+                <p>Recreação, esporte comunitário, inclusão pelo esporte e paradesporto.</p>
+              </div>
+            </div>
+          </article>
+          <article class="area-card">
+            <img src="CardAcessibilidade.jpg" alt="Acessibilidade e Inclusão" />
+            <div class="area-card-body">
+              <span class="area-icon"><i class="fa-solid fa-wheelchair"></i></span>
+              <div>
+                <h3>Acessibilidade e Inclusão</h3>
+                <p>Ações e projetos com acessibilidade arquitetônica, comunicacional e digital, Libras, audiodescrição e tecnologias assistentes.</p>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
